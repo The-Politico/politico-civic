@@ -5,10 +5,24 @@ verify_ssl = true
 name = "pypi"
 
 
+[requires]
+
+python_version = "3.6"
+
+
 [packages]
 
 django = "*"
+core = {git = "ssh://git@github.com/The-Politico/politico-civic-core", editable = true}
+entity = {git = "ssh://git@github.com/The-Politico/politico-civic-entity", editable = true}
+geography = {git = "ssh://git@github.com/The-Politico/politico-civic-geography", editable = true}
+government = {git = "ssh://git@github.com/The-Politico/politico-civic-government", editable = true}
+election = {git = "ssh://git@github.com/The-Politico/politico-civic-election", editable = true}
+candidate = {git = "ssh://git@github.com/The-Politico/politico-civic-candidate", editable = true}
+vote = {git = "ssh://git@github.com/The-Politico/politico-civic-vote", editable = true}
+stump = {git = "ssh://git@github.com/The-Politico/politico-civic-stump", editable = true}
+poll = {git = "ssh://git@github.com/The-Politico/politico-civic-poll", editable = true}
+"flake8" = "*"
 
 
 [dev-packages]
-
