@@ -1,0 +1,56 @@
+#!/usr/bin/env python
+
+"""
+Project-wide application configuration.
+DO NOT STORE SECRETS, PASSWORDS, ETC. IN THIS FILE.
+They will be exposed to users. Use environment variables instead.
+See get_secrets() below for a fast way to access them.
+"""
+
+import logging
+
+"""
+NAMES
+"""
+
+# Project name to be used in urls
+# Use dashes, not underscores!
+PROJECT_SLUG = 'politico-civic'
+
+# Project name to be used in file paths
+PROJECT_FILENAME = 'politico-civic'
+
+# Project name to be used in file paths
+PROJECT_FILENAME = 'politico-civic'
+
+# The name of the repository containing the source
+REPOSITORY_NAME = 'politico-civic'
+GITHUB_USERNAME = 'The-Politico'
+REPOSITORY_URL = 'git@github.com:%s/%s.git' % (
+    GITHUB_USERNAME, REPOSITORY_NAME
+)
+
+SERVERS = ['13.59.99.95']
+SERVER_USER = 'ubuntu'
+SERVER_PYTHON = 'python3'
+SERVER_PROJECT_PATH = '/home/%s/apps/%s' % (SERVER_USER, PROJECT_FILENAME)
+SERVER_REPOSITORY_PATH = '%s/repository' % SERVER_PROJECT_PATH
+SERVER_VIRTUALENV_PATH = '%s/virtualenv' % SERVER_PROJECT_PATH
+UWSGI_SOCKET_PATH = '/run/uwsgi/%s.uwsgi.sock' % PROJECT_FILENAME
+SERVER_BASE_URL = 'http://%s/%s' % (SERVERS[0], PROJECT_SLUG)
+
+# Services are the server-side services we want to enable and configure.
+# A three-tuple following this format:
+# (service name, service deployment path, service config file extension)
+SERVER_SERVICES = [
+    ('app', '/etc/uwsgi/sites', 'ini'),
+    ('uwsgi', '/etc/init', 'conf'),
+    ('nginx', '/etc/nginx/sites-available', 'conf'),
+]
+
+"""
+Logging
+"""
+LOG_FORMAT = '%(levelname)s:%(name)s:%(asctime)s: %(message)s'
+SERVER_LOG_PATH = '/var/log/%s' % PROJECT_FILENAME
+LOG_LEVEL = logging.DEBUG
