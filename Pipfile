@@ -23,6 +23,8 @@ poll = {git = "ssh://git@github.com/The-Politico/politico-civic-poll", editable 
 "flake8" = "*"
 "fabric3" = "*"
 "jinja2" = "*"
+"psycopg2" = "*"
+dj-database-url = "*"
 
 
 [dev-packages]

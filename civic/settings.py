@@ -10,6 +10,7 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/2.0/ref/settings/
 """
 
+import dj_database_url
 import os
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
@@ -78,14 +79,15 @@ WSGI_APPLICATION = 'civic.wsgi.application'
 
 
 # Database
-# https://docs.djangoproject.com/en/2.0/ref/settings/#databases
-
-DATABASES = {
-    'default': {
+# https://docs.djangoproject.com/en/1.11/ref/settings/#databases
+DATABASES = {}
+if 'DATABASE_URL' in os.environ:
+    DATABASES['default'] = dj_database_url.config()
+else:
+    DATABASES['default'] = {
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'NAME': 'database',
     }
-}
 
 
 # Password validation
