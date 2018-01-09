@@ -9,3 +9,8 @@ def migrate_db():
 @task
 def collectstatic():
     local('python manage.py collectstatic')
+
+
+@task
+def management(cmd):
+    local('python manage.py {0}'.format(cmd))
