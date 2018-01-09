@@ -26,7 +26,7 @@ SECRET_KEY = '4)xde(1$&het&k-_ewwe=w#dy55e9e8jq%zm+s(^b^(bv+6a1%'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['13.59.99.95', 'localhost']
+ALLOWED_HOSTS = ['13.59.99.95', '18.216.126.224', 'localhost']
 
 
 # Application definition
@@ -128,5 +128,6 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.0/howto/static-files/
 
 STATIC_URL = '/static/'
+WHITENOISE_STATIC_PREFIX = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'

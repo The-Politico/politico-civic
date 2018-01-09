@@ -30,7 +30,7 @@ REPOSITORY_URL = 'git@github.com:%s/%s.git' % (
     GITHUB_USERNAME, REPOSITORY_NAME
 )
 
-SERVERS = ['13.59.99.95']
+SERVERS = ['18.216.126.224']
 SERVER_USER = 'ubuntu'
 SERVER_PYTHON = 'python3'
 SERVER_PROJECT_PATH = '/home/%s/apps/%s' % (SERVER_USER, PROJECT_FILENAME)
