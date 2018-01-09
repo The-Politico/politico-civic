@@ -2,7 +2,7 @@ import server_config
 
 from fabric.api import task
 from fabric.state import env
-from . import servers
+from . import django, servers
 
 """
 Base configuration
