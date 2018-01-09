@@ -156,7 +156,6 @@ def render_confs():
     # Copy the server_config so that when we load the secrets they don't
     # get exposed to other management commands
     context = copy.copy(server_config.__dict__)
-    context.update(server_config.get_secrets())
 
     for service, remote_path, extension in server_config.SERVER_SERVICES:
         template_path = _get_template_conf_path(service, extension)
@@ -195,7 +194,7 @@ def deploy_confs():
                     sudo('rm /etc/nginx/sites-enabled/%s.nginx.conf' %
                          server_config.PROJECT_FILENAME)
                     sudo('ln -s /etc/nginx/sites-available/%s.nginx.conf'
-                         '/etc/nginx/sites-enabled' %
+                         ' /etc/nginx/sites-enabled' %
                          server_config.PROJECT_FILENAME)
                     sudo('service nginx restart')
                 elif service == 'uwsgi':
@@ -205,8 +204,8 @@ def deploy_confs():
                 elif service == 'app':
                     sudo('mkdir /run/uwsgi/')
                     sudo('touch %s' % server_config.UWSGI_SOCKET_PATH)
-                    sudo('chmod 644 %s' % server_config.UWSGI_SOCKET_PATH)
-                    sudo('chown www-data:www-data %s' %
+                    sudo('chmod 777 %s' % server_config.UWSGI_SOCKET_PATH)
+                    sudo('chown 777 %s' %
                          server_config.UWSGI_SOCKET_PATH)
             else:
                 logging.info('%s has not changed' % rendered_path)
@@ -269,5 +268,5 @@ def fabcast(command):
     Actually run specified commands on the server specified
     by staging() or production().
     """
-    run('cd %s && bash run_on_server.sh fab %s $DEPLOYMENT_TARGET %s'
-        % (server_config.SERVER_REPOSITORY_PATH, env.branch, command))
+    run('cd %s && bash run_on_server.sh pipenv run fab %s %s'
+        % (server_config.SERVER_PROJECT_PATH, env.branch, command))
