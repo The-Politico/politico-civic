@@ -1,4 +1,4 @@
-from fabric import local, task
+from fabric.api import local, task
 
 
 @task
