@@ -25,6 +25,7 @@ poll = {git = "ssh://git@github.com/The-Politico/politico-civic-poll", editable 
 "jinja2" = "*"
 "psycopg2" = "*"
 dj-database-url = "*"
+whitenoise = "*"
 
 
 [dev-packages]
