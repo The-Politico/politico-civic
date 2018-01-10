@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "11dff534c70a988962ecf4635e7f75fe8e226e8a9810c2e5f1e6e53aec3ad5aa"
+            "sha256": "a6f178b1c7f007b849f193270e068f21fb96dcab0c028c01fb52d43a69ac38df"
         },
         "host-environment-markers": {
             "implementation_name": "cpython",
@@ -72,17 +72,17 @@
         },
         "boto3": {
             "hashes": [
-                "sha256:495d808837250cf5b0eac9cc9060f856c6c3160d34301e4a133efa36e4d8b3ce",
-                "sha256:5bf376e30f444947cd1e4f3defbad23e83b1efb673cfae31893809e801d26a02"
+                "sha256:dab485d5e1ce5d0db27478c818212af4e0af681cfe7b5db8e36a963463cb7461",
+                "sha256:196d17737233be0cd324f968c1643c85256362e0c6710fec8ecb2b51634c53a8"
             ],
-            "version": "==1.5.11"
+            "version": "==1.5.12"
         },
         "botocore": {
             "hashes": [
-                "sha256:9d5ecfbe2b1e3622803ad56a769984c36e44f02676e9f2ff4d229214ea9fe7df",
-                "sha256:3d2b17317b92e48ee22128aa2b28918453f1a34150e3097a2dbc4bdf197761f0"
+                "sha256:e2dc15ac1251ef88b392152e1f0d810fd99b585b951f2d82e626b7c006050c9e",
+                "sha256:9bb609fc0c8b219fd8f209586508ea857c83b16042030507e3300042015a4326"
             ],
-            "version": "==1.8.25"
+            "version": "==1.8.26"
         },
         "census": {
             "hashes": [
@@ -132,7 +132,6 @@
                 "sha256:75e1de9ba7c155d89bcf67d149b1c741df553c8158536e8d27e63167403159af",
                 "sha256:ab87dd91c0c4073758d07334c1e5f712ce8fe48f007b86f8238773963ee700a6"
             ],
-            "markers": "platform_python_implementation != 'PyPy'",
             "version": "==1.11.2"
         },
         "chardet": {
@@ -183,6 +182,13 @@
                 "sha256:d96b804be412a5125a594023ec524a2010a6ffa4d408e5482ab6ff3cb97ec12f"
             ],
             "version": "==2.0.1"
+        },
+        "django-environ": {
+            "hashes": [
+                "sha256:e9c171b9d5f540e6f3bc42866941d9cd0bd77fb110a7c13a7c4857a2c08cfa40",
+                "sha256:ee2f8405d83137e3328b26b3de01bd715b5395fca22feb919dcc905fb6099cfa"
+            ],
+            "version": "==0.4.4"
         },
         "django-politico-civic-election": {
             "editable": true,

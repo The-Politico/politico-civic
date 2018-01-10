@@ -10,23 +10,17 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/2.0/ref/settings/
 """
 
-import dj_database_url
+import environ
 import os
+env = environ.Env(DEBUG=(bool, True),)
+environ.Env.read_env('../.env')
 
-# Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-
-
-# Quick-start development settings - unsuitable for production
-# See https://docs.djangoproject.com/en/2.0/howto/deployment/checklist/
-
-# SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = '4)xde(1$&het&k-_ewwe=w#dy55e9e8jq%zm+s(^b^(bv+6a1%'
+ALLOWED_HOSTS = ['18.216.126.224', 'politicoapps.com', 'localhost']
 
-# SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
-
-ALLOWED_HOSTS = ['13.59.99.95', '18.216.126.224', 'localhost']
+DEBUG = env('DEBUG')  # False if not in os.environ
+TEMPLATE_DEBUG = DEBUG
 
 
 # Application definition
@@ -83,7 +77,7 @@ WSGI_APPLICATION = 'civic.wsgi.application'
 # https://docs.djangoproject.com/en/1.11/ref/settings/#databases
 DATABASES = {}
 if 'DATABASE_URL' in os.environ:
-    DATABASES['default'] = dj_database_url.config()
+    DATABASES['default'] = env.db()
 else:
     DATABASES['default'] = {
         'ENGINE': 'django.db.backends.sqlite3',
