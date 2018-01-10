@@ -30,7 +30,7 @@ REPOSITORY_URL = 'git@github.com:%s/%s.git' % (
     GITHUB_USERNAME, REPOSITORY_NAME
 )
 
-SERVERS = ['18.216.126.224']
+SERVERS = ['politicoapps.com']
 SERVER_USER = 'ubuntu'
 SERVER_PYTHON = 'python3'
 SERVER_PROJECT_PATH = '/home/%s/apps/%s' % (SERVER_USER, PROJECT_FILENAME)
