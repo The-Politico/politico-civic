@@ -14,15 +14,13 @@ import environ
 import os
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-env = environ.Env(DEBUG=(bool, False),)
+env = environ.Env()
 environ.Env.read_env('{0}/.env'.format(BASE_DIR))
 
 SECRET_KEY = '4)xde(1$&het&k-_ewwe=w#dy55e9e8jq%zm+s(^b^(bv+6a1%'
 ALLOWED_HOSTS = ['18.216.126.224', 'politicoapps.com', 'localhost']
 
-DEBUG = env('DEBUG')  # False if not in os.environ
-TEMPLATE_DEBUG = DEBUG
-
+DEBUG = False
 
 # Application definition
 
