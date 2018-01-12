@@ -46,7 +46,6 @@ def create_directories():
     sudo('mkdir -p /etc/uwsgi')
     sudo('mkdir -p /etc/uwsgi/sites')
     sudo('mkdir -p /run/uwsgi')
-    sudo('chown ubuntu:www-data /run/uwsgi')
 
 
 def clone_repo():
@@ -74,7 +73,9 @@ def install_requirements():
     """
     with cd('%(SERVER_PROJECT_PATH)s' %
             server_config.__dict__):
-        run('pipenv install --python 3.6')
+        run('source ~/.bash_profile')
+        run('pyenv global general')
+        run('pipenv install')
 
 
 @task
@@ -205,8 +206,7 @@ def deploy_confs():
                     sudo('mkdir /run/uwsgi/')
                     sudo('touch %s' % server_config.UWSGI_SOCKET_PATH)
                     sudo('chmod 777 %s' % server_config.UWSGI_SOCKET_PATH)
-                    sudo('chown 777 %s' %
-                         server_config.UWSGI_SOCKET_PATH)
+                    sudo('chown ubuntu:www-data /run/uwsgi/')
             else:
                 logging.info('%s has not changed' % rendered_path)
 
