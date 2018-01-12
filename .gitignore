@@ -192,3 +192,4 @@ venv.bak/
 # End of https://www.gitignore.io/api/python,mac,linux,node,django
 
 confs/rendered/
+staticfiles
