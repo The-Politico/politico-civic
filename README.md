@@ -25,4 +25,4 @@ Other things that might be useful:
 - Restarting uwsgi: `fab servers.restart_service:uwsgi`
 - Install requirements: `fab servers.install_requirements`
 
-Changing the readme to test codedeploy
+This should be at the bottom of the README on the server.
