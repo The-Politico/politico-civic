@@ -3,8 +3,3 @@ os: linux
 files:
   - source: /*
     destination: /home/ubuntu/apps/politico-civic/
-hooks:
-  AfterInstall:
-    - location: deploy/postinstall
-      timeout: 300
-      runas: ubuntu
