@@ -27,6 +27,8 @@ poll = {git = "ssh://git@github.com/The-Politico/politico-civic-poll", editable 
 dj-database-url = "*"
 whitenoise = "*"
 django-environ = "*"
+social-auth-core = "*"
+social-auth-app-django = "*"
 
 
 [dev-packages]
