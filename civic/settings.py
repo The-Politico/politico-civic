@@ -135,3 +135,23 @@ SOCIAL_AUTH_SLACK_SECRET = os.getenv('SOCIAL_AUTH_SLACK_SECRET')
 SOCIAL_AUTH_SLACK_TEAM = 'politicobn'
 SOCIAL_AUTH_USERNAME_IS_FULL_EMAIL = True
 SOCIAL_AUTH_REDIRECT_IS_HTTPS = False if DEBUG else True
+
+# Logs
+LOGGING = {
+    'version': 1,
+    'disable_existing_loggers': False,
+    'handlers': {
+        'file': {
+            'level': 'DEBUG',
+            'class': 'logging.FileHandler',
+            'filename': '/var/log/politico-civic/django.log',
+        },
+    },
+    'loggers': {
+        'django': {
+            'handlers': ['file'],
+            'level': 'DEBUG',
+            'propagate': True,
+        },
+    },
+}
