@@ -4,7 +4,7 @@ files:
   - source: /
     destination: /home/ubuntu/apps/politico-civic/
   - source: /confs/awslogs.conf
-    destination: /var/awslogs/etc/awslogs.conf
+    destination: /var/awslogs/etc/
 hooks:
   AfterInstall:
     - location: deploy/postinstall.sh
