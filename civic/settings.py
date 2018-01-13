@@ -38,7 +38,7 @@ INSTALLED_APPS = [
     'geography',
     'government',
     'election',
-    'vote',
+    # 'vote',
     # 'stump',
     # 'poll',
 ]
