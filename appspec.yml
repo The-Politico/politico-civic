@@ -5,8 +5,10 @@ files:
     destination: /home/ubuntu/apps/politico-civic/
   - source: /confs/awslogs.conf
     destination: /var/awslogs/etc/
+  - source: /profiles
+    destination: /var/awslogs/etc/
 hooks:
   AfterInstall:
     - location: deploy/postinstall.sh
       timeout: 300
-      runas: root
+      runas: ubuntu
