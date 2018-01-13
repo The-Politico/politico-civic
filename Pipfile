@@ -18,8 +18,6 @@ geography = {git = "ssh://git@github.com/The-Politico/politico-civic-geography",
 government = {git = "ssh://git@github.com/The-Politico/politico-civic-government", editable = true}
 election = {git = "ssh://git@github.com/The-Politico/politico-civic-election", editable = true}
 vote = {git = "ssh://git@github.com/The-Politico/politico-civic-vote", editable = true}
-stump = {git = "ssh://git@github.com/The-Politico/politico-civic-stump", editable = true}
-poll = {git = "ssh://git@github.com/The-Politico/politico-civic-poll", editable = true}
 "flake8" = "*"
 "fabric3" = "*"
 "jinja2" = "*"
@@ -32,4 +30,3 @@ social-auth-app-django = "*"
 
 
 [dev-packages]
-
