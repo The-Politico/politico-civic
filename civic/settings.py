@@ -126,7 +126,9 @@ STATIC_URL = '/static/'
 WHITENOISE_STATIC_PREFIX = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
-
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, 'civic/static'),
+]
 
 # SOCIAL AUTH
 
@@ -150,7 +152,7 @@ if not DEBUG:
             'file': {
                 'level': 'DEBUG',
                 'class': 'logging.FileHandler',
-                'filename': '/var/log/politico-civic/django.log',
+                'filename': os.path.join(BASE_DIR, 'django.log'),
             },
         },
         'loggers': {
