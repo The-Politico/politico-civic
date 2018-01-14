@@ -6,6 +6,7 @@
 <img src="https://media3.giphy.com/media/zCNFcXsVRGhi/giphy.gif" width="400" />
 
 
+
 ## Deployment to servers
 
 To deploy code to the server, first commit your latest changes and push them to Github. Then, run:
