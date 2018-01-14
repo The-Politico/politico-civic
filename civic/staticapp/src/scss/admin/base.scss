@@ -150,3 +150,9 @@ ul.messagelist li{
   font-size: 12px;
   padding: 5px 10px 5px 40px;
 }
+
+.aligned label.required::after {
+    content: "*";
+    color: $red;
+    line-height: 12px;
+}
