@@ -5,6 +5,7 @@ sudo service awslogs restart
 
 source /home/ubuntu/.bash_profile
 
+# Move to the project dir... This is important.
 cd /home/ubuntu/apps/politico-civic/
 
 # Make sure PIPENV is configured correctly
