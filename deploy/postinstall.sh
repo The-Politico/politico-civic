@@ -1,9 +1,11 @@
 #!/bin/bash
 
-# Restart cloudwatch logs to catch new config
+# Restart logs to catch new config
 sudo service awslogs restart
 
 source /home/ubuntu/.bash_profile
+
+cd /home/ubuntu/apps/politico-civic/
 
 # Make sure PIPENV is configured correctly
 export PIPENV_VENV_IN_PROJECT=1
