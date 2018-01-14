@@ -1,5 +1,5 @@
 #!/bin/bash
-
+set -e
 # Restart logs to catch new config
 sudo service awslogs restart
 
@@ -13,7 +13,7 @@ export PIPENV_VENV_IN_PROJECT=1
 export PIPENV_IGNORE_VIRTUALENVS=1
 
 pyenv global general
-pipenv install &&
-pipenv run python manage.py collectstatic --noinput &&
-pipenv run python manage.py migrate &&
+pipenv install
+pipenv run python manage.py collectstatic --noinput
+pipenv run python manage.py migrate
 sudo service politico-civic.uwsgi restart
