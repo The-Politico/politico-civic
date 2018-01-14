@@ -9,4 +9,4 @@ hooks:
   AfterInstall:
     - location: deploy/postinstall.sh
       timeout: 300
-      runas: root
+      runas: ubuntu
