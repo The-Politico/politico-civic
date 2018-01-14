@@ -1,6 +1,6 @@
 {% load i18n static %}
 <div class="related-widget-wrapper">
-    {% include widget.template_name %}
+    {{ rendered_widget }}
     {% block links %}
         {% spaceless %}
         {% if can_change_related %}

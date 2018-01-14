@@ -1,0 +1,153 @@
+@import url("https://fonts.googleapis.com/css?family=Gruppo");
+#header {
+  background: #2f3b38;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  color: white; }
+
+div.breadcrumbs {
+  border-top: 1px solid white;
+  padding: 4px 40px;
+  background: #2f3b38;
+  font-size: 12px;
+  color: #fd5639;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23); }
+  div.breadcrumbs a:focus, div.breadcrumbs a:hover {
+    border-bottom: 1px solid white;
+    color: white;
+    font-weight: normal; }
+
+a:focus {
+  text-decoration: none; }
+
+#branding h1 {
+  color: white; }
+  #branding h1 a:link, #branding h1 a:visited {
+    color: white; }
+
+#user-tools a {
+  border-bottom-color: #fd5639; }
+  #user-tools a:focus, #user-tools a:hover {
+    color: #fd5639;
+    border-bottom-color: #fd5639;
+    font-weight: normal; }
+
+.object-tools a, .object-tools a:link {
+  background-color: #9c9c9c;
+  color: white;
+  border-radius: 5px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s; }
+  .object-tools a:focus, .object-tools a:hover, .object-tools a:link:focus, .object-tools a:link:hover {
+    color: white !important;
+    background: #2B6ABD;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.16), 2px 3px 6px rgba(0, 0, 0, 0.18); }
+    .object-tools a:focus:link, .object-tools a:hover:link, .object-tools a:link:focus:link, .object-tools a:link:hover:link {
+      color: white;
+      font-weight: normal; }
+
+a:link, a:visited {
+  color: #333;
+  font-weight: normal; }
+  a:link:hover, a:visited:hover {
+    font-weight: bold;
+    color: #fd5639; }
+
+a.addlink, a.changelink {
+  background: none;
+  color: lightgrey;
+  font-size: 12px; }
+  a.addlink:hover, a.changelink:hover {
+    font-weight: normal; }
+
+.object-tools a.addlink {
+  background-image: none;
+  padding: 10px 15px;
+  line-height: 15px; }
+
+.module caption, .module h2 {
+  background: #2f3b38;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23); }
+
+#recent-actions-module h2 {
+  box-shadow: none; }
+
+span.civic-display {
+  font-size: 38px;
+  line-height: 37px;
+  font-family: 'Gruppo';
+  font-weight: normal;
+  color: #fd5639;
+  vertical-align: bottom; }
+
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none; }
+
+input[type=text], input[type=password], input[type=email], input[type=url], input[type=number], input[type=tel], textarea, select, .vTextField {
+  border-radius: 2px; }
+
+input[type=submit] {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s; }
+  input[type=submit]:hover {
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.16), 2px 3px 6px rgba(0, 0, 0, 0.24); }
+
+.submit-row input[type=submit] {
+  background: #9c9c9c; }
+  .submit-row input[type=submit]:hover {
+    background: #2B6ABD; }
+
+.delete-confirmation form .cancel-link {
+  color: white;
+  background: #9c9c9c;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s; }
+  .delete-confirmation form .cancel-link:hover {
+    color: white;
+    background: #2B6ABD;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.16), 2px 3px 6px rgba(0, 0, 0, 0.24); }
+
+.submit-row input[type=submit].default {
+  transition: all 0.3s; }
+  .submit-row input[type=submit].default:hover {
+    background: #2B6ABD; }
+
+.submit-row a.deletelink {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s; }
+  .submit-row a.deletelink:hover {
+    color: white;
+    font-weight: normal;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.16), 2px 3px 6px rgba(0, 0, 0, 0.24); }
+
+form a:link:hover, form a:visited:hover {
+  font-weight: normal;
+  color: #2f3b38; }
+
+ul.messagelist li {
+  background: #e5e5e5;
+  color: grey;
+  font-size: 12px;
+  padding: 5px 10px 5px 40px; }
+
+.aligned label.required::after {
+  content: "*";
+  color: #fd5639;
+  line-height: 12px; }
+
+.related-widget-wrapper-link {
+  opacity: 0.2;
+  font-size: 18px;
+  line-height: 16px;
+  vertical-align: middle; }
+  .related-widget-wrapper-link:hover {
+    opacity: 0.2; }
+
+.related-widget-wrapper-link:link:hover {
+  color: #fd5639;
+  opacity: 1; }
+
+body.login #header #branding span.civic-display {
+  font-size: 30px;
+  line-height: 38px; }

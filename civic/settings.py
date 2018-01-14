@@ -26,6 +26,8 @@ DEBUG = env('DEBUG')
 # Application definition
 
 INSTALLED_APPS = [
+    'skins',
+    'django.forms',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -59,9 +61,7 @@ ROOT_URLCONF = 'civic.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [
-            os.path.join(BASE_DIR, 'civic/templates'),
-        ],
+        'DIRS': [],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -75,6 +75,8 @@ TEMPLATES = [
         },
     },
 ]
+
+FORM_RENDERER = 'django.forms.renderers.TemplatesSetting'
 
 WSGI_APPLICATION = 'civic.wsgi.application'
 
@@ -126,9 +128,6 @@ STATIC_URL = '/static/'
 WHITENOISE_STATIC_PREFIX = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
-STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'civic/static'),
-]
 
 # SOCIAL AUTH
 

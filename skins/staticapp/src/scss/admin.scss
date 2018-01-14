@@ -78,6 +78,11 @@ a.addlink, a.changelink{
     font-weight: normal;
   }
 }
+.object-tools a.addlink{
+  background-image: none;
+  padding: 10px 15px;
+  line-height: 15px;
+}
 
 .module caption, .module h2{
   background: $black;
@@ -122,6 +127,19 @@ input[type=submit]{
     background: $blue;
   }
 }
+
+.delete-confirmation form .cancel-link{
+  color: white;
+  background: $loud-button;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition: all 0.3s;
+  &:hover{
+    color: white;
+    background: $blue;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.16), 2px 3px 6px rgba(0,0,0,0.24);
+  }
+}
+
 .submit-row input[type=submit].default{
   transition: all 0.3s;
   &:hover{
@@ -156,4 +174,29 @@ ul.messagelist li{
     content: "*";
     color: $red;
     line-height: 12px;
+}
+
+.related-widget-wrapper-link{
+  opacity: 0.2;
+  font-size: 18px;
+  line-height: 16px;
+  vertical-align: middle;
+  &:hover{
+    opacity: 0.2;
+  }
+}
+.related-widget-wrapper-link:link{
+  &:hover{
+    color: $red;
+    opacity: 1;
+  }
+}
+
+body.login #header{
+  #branding{
+    span.civic-display{
+      font-size: 30px;
+      line-height: 38px;
+    }
+  }
 }

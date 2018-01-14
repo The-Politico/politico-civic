@@ -39,5 +39,8 @@
     "webpack-hot-middleware": "latest",
     "webpack-stream": "latest",
     "yargs": "latest"
+  },
+  "devDependencies": {
+    "gulp-sass": "^3.1.0"
   }
 }
