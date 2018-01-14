@@ -1,0 +1,20 @@
+{% extends "admin/base.html" %}
+{%load staticfiles%}
+{% block extrahead %}
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+<link rel="stylesheet" type="text/css" href="https://www.politico.com/interactives/cdn/fonts/base-icons/politico-base-icons.min.css">
+<link rel="stylesheet" type="text/css" href="{%static 'admin/css/main-base.css'%}">
+{% endblock %}
+
+{% block title %}POLITICO.civic site admin{% endblock %}
+
+{% block branding %}
+<h1 id="site-name">
+  <a href="{% url 'admin:index' %}">
+    <b class="icon icon-politico"></b>
+    <span class="civic-display">civic</span>
+  </a>
+</h1>
+{% endblock %}
+
+{% block nav-global %}{% endblock %}

@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css?family=Gruppo');
+@import 'colors';
+
+#header{
+  background: $black;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  color: white;
+}
+div.breadcrumbs{
+  border-top: 1px solid white;
+  padding: 4px 40px;
+  background: $black;
+  font-size: 12px;
+  color: $red;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  a:focus, a:hover{
+    border-bottom: 1px solid white;
+    color: white;
+    font-weight: normal;
+  }
+}
+
+a:focus{
+  text-decoration: none;
+}
+
+#branding h1{
+  color: white;
+  a:link, a:visited{
+    color: white;
+  }
+}
+
+#user-tools{
+  a{
+    border-bottom-color: $red;
+    &:focus, &:hover{
+      color: $red;
+      border-bottom-color: $red;
+      font-weight: normal;
+    }
+  }
+}
+.object-tools{
+  a, a:link{
+    background-color: $loud-button;
+    color: white;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: all 0.3s;
+    &:focus, &:hover{
+      color: white !important;
+      background: $blue;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.16), 2px 3px 6px rgba(0,0,0,0.18);
+      &:link{
+        color: white;
+        font-weight: normal;
+      }
+    }
+  }
+}
+
+
+a:link, a:visited{
+  color: #333;
+  font-weight: normal;
+  &:hover{
+    font-weight: bold;
+    color: $red;
+  }
+}
+
+a.addlink, a.changelink{
+  background: none;
+  color: lightgrey;
+  font-size: 12px;
+  &:hover{
+    font-weight: normal;
+  }
+}
+
+.module caption, .module h2{
+  background: $black;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+#recent-actions-module h2{
+  box-shadow: none;
+}
+
+span.civic-display{
+  font-size: 38px;
+  line-height: 37px;
+  font-family: 'Gruppo';
+  font-weight: normal;
+  color: $red;
+  vertical-align: bottom;
+}
+
+input,
+textarea,
+select{
+  &:focus{
+    outline: none;
+  }
+}
+input[type=text], input[type=password], input[type=email], input[type=url], input[type=number], input[type=tel], textarea, select, .vTextField{
+  border-radius:2px;
+}
+
+input[type=submit]{
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition: all 0.3s;
+  &:hover{
+    box-shadow: 0 2px 10px rgba(0,0,0,0.16), 2px 3px 6px rgba(0,0,0,0.24);
+  }
+}
+
+.submit-row input[type=submit]{
+  background: $loud-button;
+
+  &:hover{
+    background: $blue;
+  }
+}
+.submit-row input[type=submit].default{
+  transition: all 0.3s;
+  &:hover{
+    background: $blue;
+  }
+}
+
+.submit-row a.deletelink{
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition: all 0.3s;
+  &:hover{
+    color: white;
+    font-weight: normal;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.16), 2px 3px 6px rgba(0,0,0,0.24);
+  }
+}
+form{
+  a:link:hover, a:visited:hover{
+    font-weight: normal;
+    color: $black;
+  }
+}
+ul.messagelist li{
+  background:#e5e5e5;
+  color: grey;
+  font-size: 12px;
+  padding: 5px 10px 5px 40px;
+}
