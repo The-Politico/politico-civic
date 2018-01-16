@@ -40,8 +40,8 @@ INSTALLED_APPS = [
     'geography',
     'government',
     'election',
+    'stump',
     # 'vote',
-    # 'stump',
     # 'poll',
 ]
 
@@ -136,6 +136,7 @@ AUTHENTICATION_BACKENDS = (
     'django.contrib.auth.backends.ModelBackend',
 )
 LOGIN_URL = '/login/slack/'
+LOGIN_REDIRECT_URL = '/'
 SOCIAL_AUTH_SLACK_KEY = os.getenv('SOCIAL_AUTH_SLACK_KEY')
 SOCIAL_AUTH_SLACK_SECRET = os.getenv('SOCIAL_AUTH_SLACK_SECRET')
 SOCIAL_AUTH_SLACK_TEAM = 'politicobn'
@@ -162,3 +163,7 @@ if not DEBUG:
             },
         },
     }
+
+
+STUMP_GOOGLE_MAPS_GEOCODING_API_KEY = os.getenv(
+    'GOOGLE_MAPS_GEOCODING_API_KEY')

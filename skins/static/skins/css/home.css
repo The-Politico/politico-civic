@@ -1,0 +1,47 @@
+@import url("https://fonts.googleapis.com/css?family=Gruppo|Roboto");
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0; }
+
+.logged-in {
+  font-family: 'Roboto';
+  font-size: 14px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: block;
+  color: #fd5639; }
+  .logged-in .fa-lock {
+    color: #fd5639; }
+
+.center-cell {
+  width: 320px;
+  margin: 25% auto 0; }
+  .center-cell .logo {
+    text-align: center;
+    background: #2f3b38;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    padding: 20px;
+    color: white;
+    font-size: 30px; }
+    .center-cell .logo .civic-display {
+      font-family: 'Gruppo';
+      color: #fd5639;
+      font-size: 48px;
+      vertical-align: bottom;
+      line-height: 36px; }
+  .center-cell .content {
+    margin-top: 20px; }
+    .center-cell .content .action {
+      text-align: center;
+      font-size: 20px;
+      font-family: 'Roboto';
+      color: lightgrey;
+      font-weight: normal; }
+      .center-cell .content .action a, .center-cell .content .action a:visited {
+        text-decoration: none;
+        color: lightgrey;
+        transition: all .2s; }
+        .center-cell .content .action a:hover, .center-cell .content .action a:visited:hover {
+          color: grey; }

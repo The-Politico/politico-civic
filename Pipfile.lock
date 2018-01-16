@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "cdca4ecda21796f53308977197f8766aa51d54149c9de68c4be35c40492a8b71"
+            "sha256": "a86342a0c834d951787aaa28a346665430c8bb4acab9e6752f283ccd404e6969"
         },
         "host-environment-markers": {
             "implementation_name": "cpython",
@@ -193,6 +193,26 @@
             ],
             "version": "==0.4.4"
         },
+        "django-politico-civic-election": {
+            "editable": true,
+            "git": "ssh://git@github.com/The-Politico/politico-civic-election",
+            "ref": "f94bbbf16547218d7e2b316bac5dd99355207648"
+        },
+        "django-politico-civic-entity": {
+            "editable": true,
+            "git": "ssh://git@github.com/The-Politico/politico-civic-entity",
+            "ref": "da26bd800a3594c0c0f1978c6ba9a65cd7b93d6a"
+        },
+        "django-politico-civic-geography": {
+            "editable": true,
+            "git": "ssh://git@github.com/The-Politico/politico-civic-geography",
+            "ref": "a00969796a60c9e0a0232e09a4ab8f0c8e2ea151"
+        },
+        "django-politico-civic-government": {
+            "editable": true,
+            "git": "ssh://git@github.com/The-Politico/politico-civic-government",
+            "ref": "053ebe963d12838aa22a4de0013aacf59d9a5341"
+        },
         "django-storages": {
             "hashes": [
                 "sha256:ab6be1538cf29511400bce83d0e5ca74d2e935cad82086063bcf5e7edacc1661",
@@ -253,6 +273,13 @@
                 "sha256:c8873d12421665f6731b8e4c3b2484a4516c0d9b286c26cb7cffa781d062301a"
             ],
             "version": "==2.3.0"
+        },
+        "geopy": {
+            "hashes": [
+                "sha256:5215b360f524118a468c13bf97ecbff6136a1876bf4b11d624916e9c9e0f7c17",
+                "sha256:4250e5a9e9f7abb990eddf01d1491fc112755e14f76060011c607ba759a74112"
+            ],
+            "version": "==1.11.0"
         },
         "government": {
             "editable": true,
@@ -556,6 +583,10 @@
                 "sha256:8d371924a78d54391db194b4b077915713378cbe6e91e05a824dac9b4cdb0a5d"
             ],
             "version": "==1.6.0"
+        },
+        "stump": {
+            "editable": true,
+            "git": "ssh://git@github.com/The-Politico/politico-civic-stump"
         },
         "tqdm": {
             "hashes": [

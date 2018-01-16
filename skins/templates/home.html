@@ -1,0 +1,41 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>POLITICO civic</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" type="text/css" href="https://www.politico.com/interactives/cdn/fonts/base-icons/politico-base-icons.min.css">
+    <link rel="stylesheet" href="{% static 'skins/css/home.css'%}">
+  </head>
+  <body>
+    {% if request.user.is_authenticated %}
+    <div class="logged-in">
+      <i class="fa fa-lock" aria-hidden="true"></i>
+      {% if request.user.first_name %}
+        {{request.user.first_name}}
+      {% elif request.user.email %}
+        {{request.user.email}}
+      {% else %}
+        {{request.user}}
+      {% endif %}
+    </div>
+    {% endif %}
+    <div class="center-cell">
+      <div class="logo">
+        <b class="icon icon-politico"></b> <span class="civic-display">civic</span>
+      </div>
+      <div class="content">
+        {% if request.user.is_authenticated %}
+          <div class="action">
+            <a href="{% url 'admin:index' %}">admin</a>
+          </div>
+        {% else %}
+          <div class="action">
+            <a href="/login/slack/">login</a>
+          </div>
+        {% endif %}
+      </div>
+    </div>
+  </body>
+</html>

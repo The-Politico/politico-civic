@@ -193,3 +193,4 @@ venv.bak/
 
 confs/rendered/
 staticfiles
+tmp/
