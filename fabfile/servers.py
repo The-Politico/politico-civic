@@ -99,6 +99,7 @@ def setup_logs():
     Create log directories.
     """
     sudo('mkdir %(SERVER_LOG_PATH)s' % server_config.__dict__)
+    sudo('touch %(SERVER_LOG_PATH)s/django.log' % server_config.__dict__)
     sudo('chown ubuntu:ubuntu %(SERVER_LOG_PATH)s' % server_config.__dict__)
 
 
