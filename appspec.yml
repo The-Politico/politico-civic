@@ -11,9 +11,9 @@ hooks:
       timeout: 300
       runas: ubuntu
 permissions:
-  - object: /deploy
+  - object: /home/ubuntu/apps/politico-civic/deploy
     pattern: "**"
     owner: ubuntu
-    mode: 775
+    mode: 777
     type:
       - file
