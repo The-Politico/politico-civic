@@ -6,11 +6,12 @@ Commands work with servers. (Hiss, boo.)
 
 import copy
 import logging
-import server_config
 
-from fabric.api import cd, local, put, settings, require, run, sudo, task
-from fabric.state import env
 from jinja2 import Template
+
+import server_config
+from fabric.api import cd, local, put, require, run, settings, sudo, task
+from fabric.state import env
 
 logging.basicConfig(format=server_config.LOG_FORMAT)
 logger = logging.getLogger(__name__)
@@ -30,11 +31,24 @@ def setup():
     """
     require('branch', provided_by=['master', 'branch'])
 
+    install_node_dependencies()
     create_directories()
     clone_repo()
     checkout_latest()
     install_requirements()
     setup_logs()
+
+
+@task
+def install_node_dependencies():
+    """
+    Install node and dependencies
+    """
+    sudo('apt update')
+    sudo('apt install nodejs -y')
+    sudo('apt install npm -y')
+    sudo('apt install nodejs-legacy -y')
+    sudo('npm install -g topojson')
 
 
 @task
@@ -48,6 +62,7 @@ def create_directories():
     sudo('mkdir -p /run/uwsgi')
 
 
+@task
 def clone_repo():
     """
     Clone the source repository.
