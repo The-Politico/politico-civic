@@ -14,6 +14,6 @@ export PIPENV_IGNORE_VIRTUALENVS=1
 
 pyenv global general
 pipenv install
-pipenv run python manage.py collectstatic --noinput
 pipenv run python manage.py migrate
+pipenv run python manage.py collectstatic --noinput --clear
 sudo service politico-civic.uwsgi restart

@@ -10,3 +10,10 @@ hooks:
     - location: deploy/postinstall.sh
       timeout: 300
       runas: ubuntu
+permissions:
+  - object: /deploy
+    pattern: "**"
+    owner: ubuntu
+    mode: 775
+    type:
+      - file
