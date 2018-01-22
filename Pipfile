@@ -18,6 +18,7 @@ geography = {git = "ssh://git@github.com/The-Politico/politico-civic-geography",
 government = {git = "ssh://git@github.com/The-Politico/politico-civic-government", editable = true}
 election = {git = "ssh://git@github.com/The-Politico/politico-civic-election", editable = true}
 stump = {git = "ssh://git@github.com/The-Politico/politico-civic-stump", editable = true}
+biography = {git = "ssh://git@github.com/The-Politico/politico-civic-biography", editable = true}
 "flake8" = "*"
 "fabric3" = "*"
 "jinja2" = "*"
