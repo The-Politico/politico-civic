@@ -19,6 +19,10 @@ government = {git = "ssh://git@github.com/The-Politico/politico-civic-government
 election = {git = "ssh://git@github.com/The-Politico/politico-civic-election", editable = true}
 stump = {git = "ssh://git@github.com/The-Politico/politico-civic-stump", editable = true}
 biography = {git = "ssh://git@github.com/The-Politico/politico-civic-biography", editable = true}
+vote = {git = "ssh://git@github.com/The-Politico/politico-civic-vote", editable = true}
+demography = {git = "ssh://git@github.com/The-Politico/politico-civic-demography", editable = true}
+almanac = {git = "ssh://git@github.com/The-Politico/politico-civic-almanac", editable = true}
+electionnight = {git = "ssh://git@github.com/The-Politico/politico-civic-election-night", editable = true}
 "flake8" = "*"
 "fabric3" = "*"
 "jinja2" = "*"
@@ -28,6 +32,11 @@ whitenoise = "*"
 django-environ = "*"
 social-auth-core = "*"
 social-auth-app-django = "*"
+sphinx = "*"
+celery = "*"
+sphinxcontrib-django = "*"
+sphinx-rtd-theme = "*"
 
 
 [dev-packages]
+

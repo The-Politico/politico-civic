@@ -38,11 +38,14 @@ INSTALLED_APPS = [
     'rest_framework',
     'entity',
     'geography',
+    'demography',
     'government',
     'election',
     'stump',
     'biography',
-    # 'vote',
+    'vote',
+    'almanac',
+    'electionnight',
     # 'poll',
 ]
 

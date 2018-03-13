@@ -1,6 +1,6 @@
 .. image:: https://rawgithub.com/The-Politico/src/master/images/logo/badge.png
 
-Welcome to django-politico-civic-election-night's documentation!
+Welcome to django-politico-civic's documentation!
 ==============================================
 
 .. toctree::
