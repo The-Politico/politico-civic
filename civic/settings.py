@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'government',
     'election',
     'stump',
+    'biography',
     # 'vote',
     # 'poll',
 ]
@@ -163,7 +164,6 @@ if not DEBUG:
             },
         },
     }
-
 
 STUMP_GOOGLE_MAPS_GEOCODING_API_KEY = os.getenv(
     'GOOGLE_MAPS_GEOCODING_API_KEY')
