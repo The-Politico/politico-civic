@@ -3,6 +3,11 @@ Why this?
 
 At POLITICO, civic data is a key component of our report. We record the results of every federal election in the country. We track the movements of prospective presidential candidates. We collect campaign finance data. All of these data tasks require the same foundation of data. Thus, the POLITICO Civic project was born.
 
+If you work in a newsroom or with any civic data project, you might have similar problems to solve. Newsrooms across the United States spend many months every two years (at least) building the same piece of technology: a system to ingest election results as quickly as possible and display them with fancy data visualizations. By sharing POLITICO Civic, we hope to deescalate that arms race.
+
+What is it?
+-----------
+
 POLITICO Civic is a Django project composed of a number of pluggable Django apps. Each of the pluggable apps contains models around a particular facet of civic data and standard serializers that allow us to pass data around through JSON. At the bottom of the app tree, the apps contain front-end applications for live results, election calendars and other data-driven displays.
 
 To date, the app tree and its dependency structure is described here in a big scary dependency diagram.
