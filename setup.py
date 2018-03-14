@@ -40,6 +40,16 @@ setup(
         'sphinx',
         'sphinxcontrib-django',
         'sphinx-rtd-theme',
+        'entity',
+        'geography',
+        'government',
+        'election',
+        'biography',
+        'demography',
+        'almanac',
+        'electionnight'
+    ],
+    dependency_links=[
         'git+ssh://git@github.com/The-Politico/politico-civic-entity#egg=entity',
         'git+ssh://git@github.com/The-Politico/politico-civic-geography#egg=geography',
         'git+ssh://git@github.com/The-Politico/politico-civic-government#egg=government',
