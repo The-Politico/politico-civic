@@ -10,7 +10,7 @@ What is it?
 
 POLITICO Civic is a Django project composed of a number of pluggable Django apps. Each of the pluggable apps contains models around a particular facet of civic data and standard serializers that allow us to pass data around through JSON. At the bottom of the app tree, the apps contain front-end applications for live results, election calendars and other data-driven displays.
 
-To date, the app tree and its dependency structure is described here in a big scary dependency diagram.
+To give an illustration of how POLITICO Civic works, here is the election results app tree and its dependency structure described in a big scary dependency diagram.
 
 .. image:: images/apptree.png
   :width: 700px
