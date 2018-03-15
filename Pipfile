@@ -13,16 +13,6 @@ python_version = "3.6"
 [packages]
 
 django = "*"
-entity = {git = "ssh://git@github.com/The-Politico/politico-civic-entity", editable = true}
-geography = {git = "ssh://git@github.com/The-Politico/politico-civic-geography", editable = true}
-government = {git = "ssh://git@github.com/The-Politico/politico-civic-government", editable = true}
-election = {git = "ssh://git@github.com/The-Politico/politico-civic-election", editable = true}
-stump = {git = "ssh://git@github.com/The-Politico/politico-civic-stump", editable = true}
-biography = {git = "ssh://git@github.com/The-Politico/politico-civic-biography", editable = true}
-vote = {git = "ssh://git@github.com/The-Politico/politico-civic-vote", editable = true}
-demography = {git = "ssh://git@github.com/The-Politico/politico-civic-demography", editable = true}
-almanac = {git = "ssh://git@github.com/The-Politico/politico-civic-almanac", editable = true}
-electionnight = {git = "ssh://git@github.com/The-Politico/politico-civic-election-night", editable = true}
 "flake8" = "*"
 "fabric3" = "*"
 "jinja2" = "*"
@@ -36,6 +26,15 @@ sphinx = "*"
 celery = "*"
 sphinxcontrib-django = "*"
 sphinx-rtd-theme = "*"
+politico-civic-election-night = "*"
+politico-civic-entity = "*"
+politico-civic-geography = "*"
+politico-civic-government = "*"
+politico-civic-election = "*"
+politico-civic-biography = "*"
+politico-civic-stump = "*"
+politico-civic-demography = "*"
+politico-civic-almanac = "*"
 
 
 [dev-packages]
