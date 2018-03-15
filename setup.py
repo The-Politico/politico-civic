@@ -40,25 +40,14 @@ setup(
         'sphinx',
         'sphinxcontrib-django',
         'sphinx-rtd-theme',
-        'entity',
-        'geography',
-        'government',
-        'election',
-        'biography',
-        'demography',
-        'almanac',
-        'electionnight'
+        'politico-civic-entity',
+        'politico-civic-geography',
+        'politico-civic-government',
+        'politico-civic-election',
+        'politico-civic-biography',
+        'politico-civic-stump',
+        'politico-civic-demography',
+        'politico-civic-almanac',
+        'politico-civic-election-night'
     ],
-    dependency_links=[
-        'git+ssh://git@github.com/The-Politico/politico-civic-entity#egg=entity',
-        'git+ssh://git@github.com/The-Politico/politico-civic-geography#egg=geography',
-        'git+ssh://git@github.com/The-Politico/politico-civic-government#egg=government',
-        'git+ssh://git@github.com/The-Politico/politico-civic-election#egg=election',
-        'git+ssh://git@github.com/The-Politico/politico-civic-stump#egg=stump',
-        'git+ssh://git@github.com/The-Politico/politico-civic-biography#egg=biography',
-        'git+ssh://git@github.com/The-Politico/politico-civic-vote#egg=vote',
-        'git+ssh://git@github.com/The-Politico/politico-civic-demography#egg=demography',
-        'git+ssh://git@github.com/The-Politico/politico-civic-almanac#egg=almanac',
-        'git+ssh://git@github.com/The-Politico/politico-civic-election-night#egg=electionnight'
-    ]
 )
