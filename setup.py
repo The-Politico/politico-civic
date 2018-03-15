@@ -40,6 +40,7 @@ setup(
         'sphinx',
         'sphinxcontrib-django',
         'sphinx-rtd-theme',
+        'politico-civic-election-night',
         'politico-civic-entity',
         'politico-civic-geography',
         'politico-civic-government',
@@ -48,6 +49,5 @@ setup(
         'politico-civic-stump',
         'politico-civic-demography',
         'politico-civic-almanac',
-        'politico-civic-election-night'
     ],
 )
