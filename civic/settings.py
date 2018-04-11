@@ -20,7 +20,7 @@ environ.Env.read_env('{0}/.env'.format(BASE_DIR))
 
 SECRET_KEY = os.getenv('SECRET_KEY', 'secret')
 ALLOWED_HOSTS = [
-    '18.216.126.224', 'politicoapps.com', 'localhost', '52.200.39.101'
+    '18.216.126.224', 'politicoapps.com', 'localhost', 'civic.politicoapps.com'
 ]
 
 DEBUG = env('DEBUG')
@@ -116,7 +116,7 @@ AUTH_PASSWORD_VALIDATORS = [
 ]
 
 # HTTPS
-SECURE_SSL_REDIRECT = False
+SECURE_SSL_REDIRECT = False if DEBUG else True
 SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 
 # Internationalization
