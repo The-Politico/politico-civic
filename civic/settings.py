@@ -19,7 +19,9 @@ env = environ.Env(DEBUG=(bool, False),)
 environ.Env.read_env('{0}/.env'.format(BASE_DIR))
 
 SECRET_KEY = os.getenv('SECRET_KEY', 'secret')
-ALLOWED_HOSTS = ['18.216.126.224', 'politicoapps.com', 'localhost']
+ALLOWED_HOSTS = [
+    '18.216.126.224', 'politicoapps.com', 'localhost', '52.200.39.101'
+]
 
 DEBUG = env('DEBUG')
 
