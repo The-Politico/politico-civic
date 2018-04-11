@@ -100,17 +100,17 @@
         },
         "boto3": {
             "hashes": [
-                "sha256:7890e0aa31bee7954c671a67fab8835a12217149f197cebf13a2eff24549fad7",
-                "sha256:e6a8d4d624b72306b59d72e7481f39e497d44910ee0739f62b37e688b93be4b3"
+                "sha256:13ad5f64a247d655a27dca83274588e9d14cba61b38d3d4fd2b011b7197d88dd",
+                "sha256:a56b21efbc994580fc9cef454f0f949745c152326f939aed6609d1c47b2a0f8f"
             ],
-            "version": "==1.7.3"
+            "version": "==1.7.4"
         },
         "botocore": {
             "hashes": [
-                "sha256:c35f308cb0a259098f145cb42ac97b902e9c514ec8eea897741c70a8212b5752",
-                "sha256:0810932bc691246b21e60dd94a141935584bc4a5113847f63384486e7889e97f"
+                "sha256:77f2869b8c27afbab78b72ce6b74c75923421f364c7a0153ac1a38858c59cd91",
+                "sha256:5602738392ecde5c02a06a3b02de07171f440a44cdfef0aadff4b59567359607"
             ],
-            "version": "==1.10.3"
+            "version": "==1.10.4"
         },
         "cachecontrol": {
             "hashes": [
@@ -197,6 +197,7 @@
                 "sha256:702a91ade2968a82beb0db1e0766a6a273f33d4616a6ce8cde475d8e09853b20",
                 "sha256:24d7f2f94f7f3cb6061acb215685e5125fbcdc40a857eff9de22518820b0a4f4"
             ],
+            "markers": "python_version >= '3.0'",
             "version": "==0.5.0"
         },
         "dj-database-url": {
@@ -456,10 +457,10 @@
         },
         "politico-civic-election-night": {
             "hashes": [
-                "sha256:2e5cb5481de57342a7041cc3ab5d86667dacf8d84d82e3751d0d5c1caa954ea4",
-                "sha256:7f7ac1be246b7f8dbcdf68f44e8b6c062859b6607a1e30bb566af7473da7b9d3"
+                "sha256:e8a8b05254715b79d1ae88c1c0a57096db90a57401353fad20c69f5b2a1f2adc",
+                "sha256:36aff3ff80dd41f45481f7569225a3a1246f492724f5cf0a5995bc26d9d1b2f6"
             ],
-            "version": "==0.1.0"
+            "version": "==0.1.1"
         },
         "politico-civic-entity": {
             "hashes": [
