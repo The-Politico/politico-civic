@@ -194,3 +194,6 @@ venv.bak/
 confs/rendered/
 staticfiles
 tmp/
+terraform/.terraform
+terraform/.env
+terraform/*.tfstate

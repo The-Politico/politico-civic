@@ -26,49 +26,10 @@ Setup
 def setup():
     """
     Setup servers for deployment.
-
-    This does not setup services or push to S3. Run deploy() next.
     """
-    require('branch', provided_by=['master', 'branch'])
-
-    install_node_dependencies()
-    create_directories()
-    clone_repo()
-    checkout_latest()
-    install_requirements()
     setup_logs()
-
-
-@task
-def install_node_dependencies():
-    """
-    Install node and dependencies
-    """
-    sudo('apt update')
-    sudo('apt install nodejs -y')
-    sudo('apt install npm -y')
-    sudo('apt install nodejs-legacy -y')
-    sudo('npm install -g topojson')
-
-
-@task
-def create_directories():
-    """
-    Create server directories.
-    """
-    run('mkdir -p %(SERVER_PROJECT_PATH)s' % server_config.__dict__)
-    sudo('mkdir -p /etc/uwsgi')
-    sudo('mkdir -p /etc/uwsgi/sites')
-    sudo('mkdir -p /run/uwsgi')
-
-
-@task
-def clone_repo():
-    """
-    Clone the source repository.
-    """
-    run('git clone %(REPOSITORY_URL)s %(SERVER_PROJECT_PATH)s' %
-        server_config.__dict__)
+    setup_cert()
+    deploy_confs()
 
 
 @task
@@ -89,8 +50,8 @@ def install_requirements():
     with cd('%(SERVER_PROJECT_PATH)s' %
             server_config.__dict__):
         run('source ~/.bash_profile')
-        run('pyenv global general')
-        run('pipenv install')
+        run('pyenv global 3.6.4')
+        run('pip install -r requirements.txt')
 
 
 @task
@@ -104,22 +65,24 @@ def setup_logs():
 
 
 @task
-def install_crontab():
+def setup_cert():
     """
-    Install cron jobs script into cron.d.
+    Create SSL certificate on the server
     """
-    sudo('cp %(SERVER_PROJECT_PATH)s/cronjobs/* /etc/cron.d' %
-         server_config.__dict__)
+    sudo('certbot --nginx certonly')
 
 
 @task
-def uninstall_crontab():
+def renew_cert():
     """
-    Remove a previously install cron jobs script from cron.d
+    Renew SSL certificate on the server
     """
-    sudo('rm /etc/cron.d/%(PROJECT_FILENAME)s' % server_config.__dict__)
+    sudo('service nginx stop')
+    sudo('certbot renew')
+    sudo('service nginx start')
 
 
+@task
 def delete_project():
     """
     Remove the project directory. Invoked by shiva.
