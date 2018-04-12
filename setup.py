@@ -50,4 +50,8 @@ setup(
         'politico-civic-demography',
         'politico-civic-almanac',
     ],
+    entry_points='''
+        [console_scripts]
+        onespot=onespot:cli
+    '''
 )

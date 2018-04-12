@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "22f323cf0f42dce3d856130acfa169f1445d38157f3efa8a8cdb457c511c16d2"
+            "sha256": "2e9c783452cf2e1826e9b3b1e4b8bbc662e9f666bbdbb9e255a50bb213bb2b9d"
         },
         "host-environment-markers": {
             "implementation_name": "cpython",
@@ -170,6 +170,13 @@
             ],
             "version": "==1.11.5"
         },
+        "click": {
+            "hashes": [
+                "sha256:29f99fc6125fbc931b758dc053b3114e55c77a6e4c6c3a2674a2dc986016381d",
+                "sha256:f15516df478d5a56180fbf80e68f206010e6d160fc39fa508b65e035fd75130b"
+            ],
+            "version": "==6.7"
+        },
         "cryptography": {
             "hashes": [
                 "sha256:abd070b5849ed64e6d349199bef955ee0ad99aefbad792f0c587f8effa681a5e",
@@ -197,7 +204,6 @@
                 "sha256:702a91ade2968a82beb0db1e0766a6a273f33d4616a6ce8cde475d8e09853b20",
                 "sha256:24d7f2f94f7f3cb6061acb215685e5125fbcdc40a857eff9de22518820b0a4f4"
             ],
-            "markers": "python_version >= '3.0'",
             "version": "==0.5.0"
         },
         "dj-database-url": {
@@ -282,6 +288,12 @@
             ],
             "version": "==0.16.0"
         },
+        "geographiclib": {
+            "hashes": [
+                "sha256:635da648fce80a57b81b28875d103dacf7deb12a3f5f7387ba7d39c51e096533"
+            ],
+            "version": "==1.49"
+        },
         "geojson": {
             "hashes": [
                 "sha256:8831556d1ac18805c4955aa881e022e6ddcef44020b315200680eec6dd209e40",
@@ -291,10 +303,10 @@
         },
         "geopy": {
             "hashes": [
-                "sha256:2450f7f85b1fe980b0a3f2e09117ae1ace34e4b9034d52e2e782f486a5a8036c",
-                "sha256:d53a31df9cfb5591fa96a35da9f02ef3c67241e3c32d7cd82d4d94211d46d6a0"
+                "sha256:a373625acd0449a6b1f65ddad331021e3f0a79ec0f298dc2516c350c10cd84f5",
+                "sha256:1e02b749c812976a46fd4737e55020dbc4197a7510826d771531f41168aa3dde"
             ],
-            "version": "==1.12.0"
+            "version": "==1.13.0"
         },
         "idna": {
             "hashes": [
@@ -753,10 +765,10 @@
         },
         "tqdm": {
             "hashes": [
-                "sha256:185f0db47cd591c843774678e44fe4933caa5fda36177eb96f22033e4bcd9702",
-                "sha256:b94af236084ceaad93a6ada00bd9976900b172ec9b821828ed0d4b53f7431170"
+                "sha256:a180389a780f6b52268c30f40fdcb0443ab3d925574579d987eadf10c59ff90c",
+                "sha256:059e7dd579f2c1a2b9103a8ec76fb0bc32cc16904d7d65977edfed6b5745dc48"
             ],
-            "version": "==4.21.0"
+            "version": "==4.22.0"
         },
         "ujson": {
             "hashes": [

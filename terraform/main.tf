@@ -8,8 +8,6 @@ provider "aws" {
 # Data sources to get VPC, subnet, security group and AMI details
 ##################################################################
 
-variable "public_ip" {}
-
 resource "aws_security_group" "ssh" {
   name        = "ssh-security-group"
   description = "Allows SSH traffic from internet"

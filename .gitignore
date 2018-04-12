@@ -197,3 +197,4 @@ tmp/
 terraform/.terraform
 terraform/.env
 terraform/*.tfstate*
+terraform/*.tfvars

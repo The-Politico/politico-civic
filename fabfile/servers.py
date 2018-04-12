@@ -10,7 +10,7 @@ import logging
 from jinja2 import Template
 
 import server_config
-from fabric.api import cd, local, put, require, run, settings, sudo, task
+from fabric.api import cd, local, put, run, settings, sudo, task
 from fabric.state import env
 
 logging.basicConfig(format=server_config.LOG_FORMAT)
@@ -69,7 +69,7 @@ def setup_cert():
     """
     Create SSL certificate on the server
     """
-    sudo('certbot --nginx certonly')
+    sudo('certbot --nginx -d {} certonly'.format(server_config.SERVERS[0]))
 
 
 @task

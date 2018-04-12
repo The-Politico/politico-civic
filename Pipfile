@@ -35,6 +35,7 @@ politico-civic-biography = "*"
 politico-civic-stump = "*"
 politico-civic-demography = "*"
 politico-civic-almanac = "*"
+click = "*"
 
 
 [dev-packages]
