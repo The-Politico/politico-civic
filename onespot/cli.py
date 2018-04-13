@@ -24,7 +24,6 @@ def server_launch():
     """
     os.chdir('terraform')
     run(['terraform', 'apply'])
-    server_setup()
 
 
 @server.command('setup')
