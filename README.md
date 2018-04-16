@@ -5,24 +5,22 @@
 
 <img src="https://media3.giphy.com/media/zCNFcXsVRGhi/giphy.gif" width="400" />
 
+## Server Setup
 
+Civic provides a cli called `onespot` that handles server management for you. To get it installed on your path, make sure your virtual environment is activated, and run `python setup.py develop`.
 
-## Deployment to servers
+##### Destroy server
 
-To deploy code to the server, first commit your latest changes and push them to Github. Then, run:
+To destroy the current server architecture, run `onespot server destroy`.
 
-```
-$ fab master deploy_server
-```
+##### Provision new server
 
-To run a Django management command on the server, run:
+To create a new server, run `onespot server launch`
 
-```
-$ fab django.management:<management command>
-```
+##### Setup new server
 
-Other things that might be useful:
+To setup a server you just created, run `onespot server setup`
 
+##### Updating existing server
 
-- Restarting uwsgi: `fab servers.restart_service:uwsgi`
-- Install requirements: `fab servers.install_requirements`
+To update an existing server, push all of the latest code to Github. Then, run `onespot server update`.
