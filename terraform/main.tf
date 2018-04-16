@@ -322,4 +322,8 @@ resource "aws_instance" "civic" {
     source      = "./.env"
     destination = "/home/ubuntu/.env"
   }
+
+  provisioner "remote-exec" {
+    script = "./scripts/deploy.sh"
+  }
 }
