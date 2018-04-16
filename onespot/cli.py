@@ -33,6 +33,13 @@ def server_setup():
     """
     run(['fab', 'servers.setup'])
 
+@server.command('update')
+def server_update():
+    """
+    Update repo on server
+    """
+    run(['fab', 'master', 'servers.checkout_latest'])
+
 
 @server.command('destroy')
 def server_destroy():
