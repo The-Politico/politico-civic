@@ -43,6 +43,7 @@ def checkout_latest(remote='origin'):
         run('cd %s; git checkout %s; git pull %s %s' %
             (server_config.SERVER_PROJECT_PATH, env.branch, remote, env.branch))
         run('pyenv global 3.6.4')
+        run('pip install -r requirements.txt')
         run('python manage.py migrate')
         run('python manage.py collectstatic --noinput')
         restart_service('uwsgi')
@@ -57,7 +58,6 @@ def install_requirements():
             server_config.__dict__):
         run('source ~/.bash_profile')
         run('pyenv global 3.6.4')
-        run('pip install -r requirements.txt')
 
 
 @task
