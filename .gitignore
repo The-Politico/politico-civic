@@ -198,3 +198,4 @@ terraform/.terraform
 terraform/.env
 terraform/*.tfstate*
 terraform/*.tfvars
+.vscode
