@@ -37,11 +37,13 @@ def checkout_latest(remote='origin'):
     """
     Checkout the latest source.
     """
-    with cd('%(SERVER_PROJECT_PATH)s' %
-        server_config.__dict__):
-        run('cd %s; git fetch %s' % (server_config.SERVER_PROJECT_PATH, remote))
-        run('cd %s; git checkout %s; git pull %s %s' %
-            (server_config.SERVER_PROJECT_PATH, env.branch, remote, env.branch))
+    with cd('%(SERVER_PROJECT_PATH)s' % server_config.__dict__):
+        run('cd %s; git fetch %s' % (
+            server_config.SERVER_PROJECT_PATH, remote
+        ))
+        run('cd %s; git checkout %s; git pull %s %s' % (
+            server_config.SERVER_PROJECT_PATH, env.branch, remote, env.branch
+        ))
         run('pyenv global 3.6.4')
         run('pip install -r requirements.txt')
         run('python manage.py migrate')
