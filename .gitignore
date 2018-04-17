@@ -199,3 +199,7 @@ terraform/**/.env
 terraform/**/*.tfstate*
 terraform/**/*.tfvars
 .vscode
+civic/static_results
+bootstrap.json
+master.json
+reup.json

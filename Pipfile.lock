@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "a54a8cffa2d072fcf2ed0ae203093fd9463b0246c1b3a014a0f8eb7c6c50ac2a"
+            "sha256": "fc746d968f6c2ca43026ed699c65127631a8a2a5057e8ceab52a0299f9a0f48c"
         },
         "host-environment-markers": {
             "implementation_name": "cpython",
@@ -168,7 +168,6 @@
                 "sha256:3c85641778460581c42924384f5e68076d724ceac0f267d66c757f7535069c93",
                 "sha256:e90f17980e6ab0f3c2f3730e56d1fe9bcba1891eeea58966e89d352492cc74f4"
             ],
-            "markers": "platform_python_implementation != 'PyPy'",
             "version": "==1.11.5"
         },
         "click": {
@@ -205,6 +204,7 @@
                 "sha256:702a91ade2968a82beb0db1e0766a6a273f33d4616a6ce8cde475d8e09853b20",
                 "sha256:24d7f2f94f7f3cb6061acb215685e5125fbcdc40a857eff9de22518820b0a4f4"
             ],
+            "markers": "python_version >= '3.0'",
             "version": "==0.5.0"
         },
         "dj-database-url": {
@@ -477,10 +477,10 @@
         },
         "politico-civic-election-night": {
             "hashes": [
-                "sha256:54bd85d5de5d1591a9a2ca5b1c75c75996cd33c57646bca32ffba8dc14df1061",
-                "sha256:623d3fe258d4553a73f69c4198f46fd7b4748ea8b5c5adcc03cab9a919cffc64"
+                "sha256:33e93a44a0f05bc8a505518c772f32c79bd6d3d27baf38bc43b7beaf83d4ad19",
+                "sha256:65c1d6b13d4dbae5392b8fcec7b9a6f9fd35afcc961b86a625a7ad74494c5292"
             ],
-            "version": "==0.1.2"
+            "version": "==0.1.6"
         },
         "politico-civic-entity": {
             "hashes": [
