@@ -27,8 +27,8 @@ def setup():
     """
     Setup servers for deployment.
     """
-    # setup_logs()
-    # setup_cert()
+    setup_logs()
+    setup_cert()
     deploy_confs()
 
 
@@ -75,7 +75,7 @@ def setup_cert():
     """
     Create SSL certificate on the server
     """
-    # sudo('certbot --nginx -d {} certonly'.format(server_config.SERVERS[0]))
+    sudo('certbot --nginx -d {} certonly'.format(server_config.SERVERS[0]))
 
 
 @task
