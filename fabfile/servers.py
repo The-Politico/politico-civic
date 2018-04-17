@@ -50,17 +50,6 @@ def checkout_latest(remote='origin'):
 
 
 @task
-def install_requirements():
-    """
-    Install the latest requirements.
-    """
-    with cd('%(SERVER_PROJECT_PATH)s' %
-            server_config.__dict__):
-        run('source ~/.bash_profile')
-        run('pyenv global 3.6.4')
-
-
-@task
 def setup_logs():
     """
     Create log directories.
