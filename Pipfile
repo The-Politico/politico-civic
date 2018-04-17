@@ -36,6 +36,7 @@ politico-civic-stump = "*"
 politico-civic-demography = "*"
 politico-civic-almanac = "*"
 click = "*"
+django-split-settings = "*"
 
 
 [dev-packages]
