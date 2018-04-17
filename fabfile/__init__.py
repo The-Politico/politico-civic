@@ -9,13 +9,23 @@ Base configuration
 """
 env.user = server_config.SERVER_USER
 env.forward_agent = True
-env.hosts = server_config.SERVERS
 
 """
 Branches
 
 Changing branches requires deploying that branch to a host.
 """
+
+
+@task
+def production():
+    env.hosts = server_config.PRODUCTION_SERVERS
+
+
+@task
+def staging():
+    env.hosts = server_config.STAGING_SERVERS
+
 
 @task
 def master():

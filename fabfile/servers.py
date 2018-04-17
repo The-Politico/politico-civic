@@ -27,8 +27,8 @@ def setup():
     """
     Setup servers for deployment.
     """
-    setup_logs()
-    setup_cert()
+    # setup_logs()
+    # setup_cert()
     deploy_confs()
 
 
@@ -75,7 +75,7 @@ def setup_cert():
     """
     Create SSL certificate on the server
     """
-    sudo('certbot --nginx -d {} certonly'.format(server_config.SERVERS[0]))
+    # sudo('certbot --nginx -d {} certonly'.format(server_config.SERVERS[0]))
 
 
 @task
@@ -142,6 +142,11 @@ def render_confs():
     # Copy the server_config so that when we load the secrets they don't
     # get exposed to other management commands
     context = copy.copy(server_config.__dict__)
+    context['SERVERS'] = env.hosts
+    if env.hosts[0].endswith('.com'):
+        context['SSL'] = True
+    else:
+        context['SSL'] = False
 
     for service, remote_path, extension in server_config.SERVER_SERVICES:
         template_path = _get_template_conf_path(service, extension)

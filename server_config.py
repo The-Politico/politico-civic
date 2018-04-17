@@ -30,14 +30,14 @@ REPOSITORY_URL = 'git@github.com:%s/%s.git' % (
     GITHUB_USERNAME, REPOSITORY_NAME
 )
 
-SERVERS = ['civic.politicoapps.com']
+PRODUCTION_SERVERS = ['civic.politicoapps.com']
+STAGING_SERVERS = ['34.236.162.252']
 SERVER_USER = 'ubuntu'
 SERVER_PYTHON = 'python3'
 SERVER_PROJECT_PATH = '/home/%s/apps/%s' % (SERVER_USER, PROJECT_FILENAME)
 SERVER_REPOSITORY_PATH = '%s/repository' % SERVER_PROJECT_PATH
 SERVER_VIRTUALENV_PATH = '%s/virtualenv' % SERVER_PROJECT_PATH
 UWSGI_SOCKET_PATH = '/run/uwsgi/%s.uwsgi.sock' % PROJECT_FILENAME
-SERVER_BASE_URL = 'http://%s/%s' % (SERVERS[0], PROJECT_SLUG)
 
 # Services are the server-side services we want to enable and configure.
 # A three-tuple following this format:

@@ -18,33 +18,46 @@ def server():
 
 
 @server.command('launch')
-def server_launch():
+@click.option(
+    '--target', default='staging', help='The server environment to target'
+)
+def server_launch(target):
     """
     Creates a new server through terraform
     """
-    os.chdir('terraform')
+    os.chdir('terraform/{}'.format(target))
     run(['terraform', 'apply'])
 
 
 @server.command('setup')
-def server_setup():
+@click.option(
+    '--target', default='staging', help='The server environment to target'
+)
+def server_setup(target):
     """
     Setup an existing server with Fabric
     """
-    run(['fab', 'servers.setup'])
+    run(['fab', target, 'servers.setup'])
+
 
 @server.command('update')
-def server_update():
+@click.option(
+    '--target', default='staging', help='The server environment to target'
+)
+def server_update(target):
     """
     Update repo on server
     """
-    run(['fab', 'master', 'servers.checkout_latest'])
+    run(['fab', target, 'master', 'servers.checkout_latest'])
 
 
 @server.command('destroy')
-def server_destroy():
+@click.option(
+    '--target', default='staging', help='The server environment to target'
+)
+def server_destroy(target):
     """
     Destroys server architecture using terraform
     """
-    os.chdir('terraform')
+    os.chdir('terraform/{}'.format(target))
     run(['terraform', 'destroy'])

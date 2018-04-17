@@ -295,7 +295,7 @@ resource "aws_eip_association" "proxy_eip" {
 
 resource "aws_instance" "civic" {
   ami           = "ami-7ace6b05"
-  instance_type = "t2.micro"
+  instance_type = "${var.server_size}"
   subnet_id     = "subnet-1792345f"
   key_name      = "politicoapps.com"
 
@@ -307,7 +307,8 @@ resource "aws_instance" "civic" {
   ]
   associate_public_ip_address = true
   tags {
-    Name = "civic"
+    Name   = "civic-${var.target}"
+    target = "${var.target}"
   }
   connection = {
     type        = "ssh"
@@ -316,13 +317,13 @@ resource "aws_instance" "civic" {
     agent       = true
   }
   provisioner "remote-exec" {
-    script = "./scripts/deploy.sh"
+    script = "../scripts/deploy.sh"
   }
   provisioner "file" {
     source      = "./.env"
     destination = "/home/ubuntu/apps/politico-civic/.env"
   }
   provisioner "remote-exec" {
-    script = "./scripts/postdeploy.sh"
+    script = "../scripts/postdeploy.sh"
   }
 }
