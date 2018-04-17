@@ -31,7 +31,7 @@ REPOSITORY_URL = 'git@github.com:%s/%s.git' % (
 )
 
 PRODUCTION_SERVERS = ['civic.politicoapps.com']
-STAGING_SERVERS = ['34.236.162.252']
+STAGING_SERVERS = ['staging.civic.politicoapps.com']
 SERVER_USER = 'ubuntu'
 SERVER_PYTHON = 'python3'
 SERVER_PROJECT_PATH = '/home/%s/apps/%s' % (SERVER_USER, PROJECT_FILENAME)
