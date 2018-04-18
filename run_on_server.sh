@@ -1,4 +1,3 @@
-source ~/.bash_profile
-pyenv global 3.6.4
+source /etc/environment
 cd `dirname "$0"`
 eval $@
