@@ -46,6 +46,8 @@ SERVER_SERVICES = [
     ('app', '/etc/uwsgi/sites', 'ini'),
     ('uwsgi', '/etc/init', 'conf'),
     ('nginx', '/etc/nginx/sites-available', 'conf'),
+    ('results', '/etc/init', 'conf'),
+    ('reup', '/etc/init', 'conf')
 ]
 
 """

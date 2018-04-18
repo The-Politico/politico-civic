@@ -27,7 +27,7 @@ def setup():
     """
     Setup servers for deployment.
     """
-    # setup_logs()
+    setup_logs()
     setup_cert()
     deploy_confs()
 
@@ -223,6 +223,20 @@ def start_service(service):
     """
     service_name = _get_installed_service_name(service)
     sudo('service %s start' % service_name)
+
+
+@task
+def start_results(date, test=''):
+    service_name = _get_installed_service_name('results')
+    sudo('service {0} start DATE={1} TEST={2}'.format(
+        service_name, date, test
+    ))
+
+
+@task
+def start_reup(date):
+    service_name = _get_installed_service_name('reup')
+    sudo('service {0} start DATE={1}'.format(service_name, date))
 
 
 @task
