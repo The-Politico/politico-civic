@@ -17,6 +17,11 @@ def server():
     """Manages server."""
 
 
+@cli.group()
+def election():
+    """Manages election nights."""
+
+
 @server.command('launch')
 @click.option(
     '--target', default='staging', help='The server environment to target'
@@ -61,3 +66,64 @@ def server_destroy(target):
     """
     os.chdir('terraform/{}'.format(target))
     run(['terraform', 'destroy'])
+
+
+@election.command('init')
+@click.argument('date')
+@click.option('--test', is_flag=True, help='Pass test flag to elex')
+@click.option(
+    '--target', default='staging', help='The server environment to target'
+)
+def election_init(date, target, test):
+    """
+    Initializes election data in the database, sets up necessary config files,
+    and bootstraps content in the database.
+    """
+    if test:
+        test_flag = '--test'
+    else:
+        test_flag = ''
+    
+    bootstrap_elex = 'bootstrap_elex {0} {1}'.format(date, test_flag)
+    bootstrap_results_config = 'bootstrap_results_config {0}'.format(date)
+    bootstrap_content = 'bootstrap_content {0}'.format(date)
+
+    run(['fab', target, 'django.management:{0}'.format(bootstrap_elex)])
+    run([
+        'fab', target, 'django.management:{0}'.format(bootstrap_results_config)
+    ])
+    run(['fab', target, 'django.management:{0}'.format(bootstrap_content)])
+
+
+
+@election.command('start')
+@click.argument('date')
+@click.option('--test', is_flag=True, help='Pass test flag to elex')
+@click.option(
+    '--target', default='staging', help='The server environment to target'
+)
+def election_start(date, target, test):
+    """
+    Starts results and reup processes on the server.
+    """
+    if test:
+        test_flag = '--test'
+    else:
+        test_flag = ''
+
+    run(['fab', target, 'servers.start_results:{0},{1}'.format(
+        date, test_flag
+    )])
+    run(['fab', target, 'servers.start_reup:{0}'.format(date)])
+
+
+@election.command('stop')
+@click.option(
+    '--target', default='staging', help='The server environment to target'
+)
+def election_stop(target):
+    """
+    Stops results and reup processes on the server.
+    """
+    run(['fab', target, 'servers.stop_service:results'])
+    run(['fab', target, 'servers.stop_service:reup'])
