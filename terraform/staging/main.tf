@@ -313,7 +313,7 @@ resource "aws_instance" "civic" {
   connection = {
     type        = "ssh"
     user        = "ubuntu"
-    private_key = "${file("~/src/privateeye/politicoapps.com.pem")}"
+    private_key = "${file("~/src/private-eye/politicoapps.com.pem")}"
     agent       = true
   }
   provisioner "remote-exec" {

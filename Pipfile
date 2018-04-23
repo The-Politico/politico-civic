@@ -37,6 +37,7 @@ politico-civic-demography = "*"
 politico-civic-almanac = "*"
 click = "*"
 django-split-settings = "*"
+elex = "==2.4.2"
 
 
 [dev-packages]

@@ -9,7 +9,7 @@ provider "aws" {
 ##################################################################
 
 resource "aws_security_group" "ssh" {
-  name        = "ssh-security-group"
+  name        = "ssh-security-group-${var.target}"
   description = "Allows SSH traffic from internet"
   vpc_id      = "vpc-14051972"
 
@@ -21,12 +21,12 @@ resource "aws_security_group" "ssh" {
   }
 
   tags {
-    Name = "ssh-security-group"
+    Name = "ssh-security-group-${var.target}"
   }
 }
 
 resource "aws_security_group" "web" {
-  name        = "web-security-group"
+  name        = "web-security-group-${var.target}"
   description = "Allows web traffic from internet"
   vpc_id      = "vpc-14051972"
 
@@ -52,7 +52,7 @@ resource "aws_security_group" "web" {
   }
 
   tags {
-    Name = "web-security-group"
+    Name = "web-security-group-${var.target}"
   }
 }
 
@@ -313,7 +313,7 @@ resource "aws_instance" "civic" {
   connection = {
     type        = "ssh"
     user        = "ubuntu"
-    private_key = "${file("~/src/privateeye/politicoapps.com.pem")}"
+    private_key = "${file("~/src/private-eye/politicoapps.com.pem")}"
     agent       = true
   }
   provisioner "remote-exec" {
