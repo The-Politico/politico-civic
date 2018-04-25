@@ -27,9 +27,16 @@ def setup():
     """
     Setup servers for deployment.
     """
+    install_extra_requirements()
     setup_logs()
     setup_cert()
     deploy_confs()
+
+
+@task
+def install_extra_requirements():
+    sudo('apt-get install jq -y')
+    run('pip install awscli')
 
 
 @task
