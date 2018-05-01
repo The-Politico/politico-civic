@@ -48,7 +48,7 @@ politico-civic-almanac==0.1.0
 politico-civic-biography==0.1.0
 politico-civic-demography==0.1.0
 politico-civic-election==0.1.1
-politico-civic-election-night==0.2.0
+politico-civic-election-night==0.2.1
 politico-civic-entity==0.1.0
 politico-civic-geography==0.2.0
 politico-civic-government==0.1.0
