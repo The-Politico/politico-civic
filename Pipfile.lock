@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "60a810d402018bd24a18de768fdea0f090ef34d2256b5a32164bedccd6be249d"
+            "sha256": "49047044f69226468373d725f6eda59b71e11cad249d5789075d30f072e14137"
         },
         "host-environment-markers": {
             "implementation_name": "cpython",
@@ -204,7 +204,6 @@
                 "sha256:702a91ade2968a82beb0db1e0766a6a273f33d4616a6ce8cde475d8e09853b20",
                 "sha256:24d7f2f94f7f3cb6061acb215685e5125fbcdc40a857eff9de22518820b0a4f4"
             ],
-            "markers": "python_version >= '3.0'",
             "version": "==0.5.0"
         },
         "dj-database-url": {
@@ -216,10 +215,10 @@
         },
         "django": {
             "hashes": [
-                "sha256:2d8b9eed8815f172a8e898678ae4289a5e9176bc08295676eff4228dd638ea61",
-                "sha256:d81a1652963c81488e709729a80b510394050e312f386037f26b54912a3a10d0"
+                "sha256:26b34f4417aa38d895b6b5307177b51bc3f4d53179d8696a5c19dcb50582523c",
+                "sha256:71d1a584bb4ad2b4f933d07d02c716755c1394feaac1ce61ce37843ac5401092"
             ],
-            "version": "==2.0.4"
+            "version": "==2.0.5"
         },
         "django-cors-headers": {
             "hashes": [
@@ -477,10 +476,10 @@
         },
         "politico-civic-election-night": {
             "hashes": [
-                "sha256:f55257dd83749c115502c758c3e64bfb951ab2e11bbbafa72690e8439c4c6a3e",
-                "sha256:173cd99107dd4af4fcc67589ea26b1477f1477eb3d8e412a5f53050972b91c7e"
+                "sha256:9eebde6678e4a1dd2edc5c96c10b7d0403a6d12c8f2b335f02f98726da5dd61e",
+                "sha256:862615e249d6b05f56118eb44777e1006ab0c36f41e09ccd6f92fcdb9ab45101"
             ],
-            "version": "==0.2.1"
+            "version": "==0.2.2"
         },
         "politico-civic-entity": {
             "hashes": [
@@ -662,6 +661,7 @@
             "hashes": [
                 "sha256:eec865307ebe7f329a6a9945c15453265a449cdaaf3710340828a1934d53e468"
             ],
+            "markers": "python_version >= '2.7'",
             "version": "==2.2"
         },
         "python-slugify": {
