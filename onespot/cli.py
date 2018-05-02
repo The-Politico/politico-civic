@@ -127,3 +127,26 @@ def election_stop(target):
     """
     run(['fab', target, 'servers.stop_service:results'])
     run(['fab', target, 'servers.stop_service:reup'])
+
+
+@election.command('finish')
+@click.argument('date')
+@click.option('--test', is_flag=True, help='Pass test flag to elex')
+@click.option(
+    '--target', default='staging', help='The server environment to target'
+)
+def election_finish(date, target, test):
+    if test:
+        test_flag = '--test'
+    else:
+        test_flag = ''
+
+    run(['fab', target, 'servers.stop_service:results'])
+    run(['fab', target, 'servers.stop_service:reup'])
+
+    get_once = 'get_results {} {} --run_once'.format(date, test_flag)
+    reup_once = 'bootstrap_results_db {} {} --tabulated --run_once'.format(
+        date, test_flag
+    )
+    run(['fab', target, 'django.management:{}'.format(get_once)])
+    run(['fab', target, 'django.management:{}'.format(reup_once)])
