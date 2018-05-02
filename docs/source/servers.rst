@@ -82,4 +82,11 @@ Stopping election night results processes
 
 ``onespot election stop``
 
-This command stops the results and reupload processes.
+This command stops the results and reupload processes indiscriminately.
+
+Finishing an election night
+'''''''''''''''''''''''''''
+
+``onespot election finish <DATE>``
+
+This command stops the results and reupload processes, and then runs them one more time to ensure all races are marked as tabulated. Remember to pass ``--test`` if you need to use the test data from AP.
