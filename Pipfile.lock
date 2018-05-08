@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "5446e0fcc8e6ffd37c886fb8cc6974aa999808c978958a64666441aca97274b1"
+            "sha256": "d309e86436bf2e0d586666e2eaf68a0cd9bc8ca1820af61006f1b608e2d2f1dd"
         },
         "host-environment-markers": {
             "implementation_name": "cpython",
@@ -100,17 +100,17 @@
         },
         "boto3": {
             "hashes": [
-                "sha256:f303b0feaabbe98b36ab12be1c641799104c935c9e0c9315b6fe53a39d668d79",
-                "sha256:a2d5c0a007ff50b4a08f402925495e18e41e336d22767a2b4fa21913fa875b2f"
+                "sha256:7a11e43e7fd4925ad04289bcc9a8175508f46432c8d3d9a27b4ec54eba3ef545",
+                "sha256:3dc4d47d2adc5463afd05124d8e612ecb3da8253b8e95b61d7c4f50762ab976a"
             ],
-            "version": "==1.7.14"
+            "version": "==1.7.16"
         },
         "botocore": {
             "hashes": [
-                "sha256:5e61efeb68688149fb8220f0bca6c8a89bc998dffb99673d0bf24cfe2f2e47a9",
-                "sha256:2d83993e60ba56ca3ddb48a0d4da86c1cfa1f687993abe760eeb0059d10e52f6"
+                "sha256:6e6f138758a2ceec18f9dcdb4f0bd69d0b6f2e3adbdea6b0498604001b294999",
+                "sha256:ddab94a9affd702884a8941ffd413e577e2f2941652c4c20f99a81dcb8548dce"
             ],
-            "version": "==1.10.14"
+            "version": "==1.10.16"
         },
         "cachecontrol": {
             "hashes": [
@@ -477,10 +477,10 @@
         },
         "politico-civic-election-night": {
             "hashes": [
-                "sha256:4948c5d4b257093cbf2679c3d74c07a8183b898a1749d3992c34044f72f6aa9d",
-                "sha256:28b67eb8b0c63735cee866ff375ea9c4a824589e3fbcf5fb2d618de032ed04ce"
+                "sha256:595c61f2d6a1776f314e7cf13ce99bdc2c518dab5babf1eb985bbb7906510fda",
+                "sha256:7ac4b250e3ed3448887800bbda05fe8415958dca9dfdbbd9de2941efc6c32629"
             ],
-            "version": "==0.2.10"
+            "version": "==0.2.11"
         },
         "politico-civic-entity": {
             "hashes": [
@@ -660,7 +660,6 @@
             "hashes": [
                 "sha256:eec865307ebe7f329a6a9945c15453265a449cdaaf3710340828a1934d53e468"
             ],
-            "markers": "python_version >= '2.7'",
             "version": "==2.2"
         },
         "python-slugify": {
@@ -772,10 +771,10 @@
         },
         "tqdm": {
             "hashes": [
-                "sha256:139b1672ab75ca6cb670d215ab0b408bec214ca3bed918de50ff265e0ee77617",
-                "sha256:75efcd98827971f96aa9b270e73ccedf1d275b781a9149a0846a7728010d045e"
+                "sha256:9fc19da10d7c962613cbcb9cdced41230deb31d9e20332da84c96917ff534281",
+                "sha256:ce205451a27b6050faed0bb2bcbea96c6a550f8c27cd2b5441d72e948113ad18"
             ],
-            "version": "==4.23.2"
+            "version": "==4.23.3"
         },
         "ujson": {
             "hashes": [
