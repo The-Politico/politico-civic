@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "d309e86436bf2e0d586666e2eaf68a0cd9bc8ca1820af61006f1b608e2d2f1dd"
+            "sha256": "40e5a6c27cdcc22bc37ff4b3ee109feb18ae0732c9aab7724216580a23343cc5"
         },
         "host-environment-markers": {
             "implementation_name": "cpython",
@@ -100,17 +100,17 @@
         },
         "boto3": {
             "hashes": [
-                "sha256:7a11e43e7fd4925ad04289bcc9a8175508f46432c8d3d9a27b4ec54eba3ef545",
-                "sha256:3dc4d47d2adc5463afd05124d8e612ecb3da8253b8e95b61d7c4f50762ab976a"
+                "sha256:3bf4cb951faa6908134bc7f9faa300628e58961d329cba9810c65ef5fd99b54e",
+                "sha256:b4fadc62eca3bb2c4f894f807d087058fdf93f074472f8b7db385ed66f1c0136"
             ],
-            "version": "==1.7.16"
+            "version": "==1.7.19"
         },
         "botocore": {
             "hashes": [
-                "sha256:6e6f138758a2ceec18f9dcdb4f0bd69d0b6f2e3adbdea6b0498604001b294999",
-                "sha256:ddab94a9affd702884a8941ffd413e577e2f2941652c4c20f99a81dcb8548dce"
+                "sha256:184e600f78ddcc4eb508858cc82939ea4fa2b2ab9cc09c9f8642e8734c9528b4",
+                "sha256:e05534810847803e30a86583702eaee0c7f4f390a7af31cca8ee7e08c39ce47c"
             ],
-            "version": "==1.10.16"
+            "version": "==1.10.19"
         },
         "cachecontrol": {
             "hashes": [
@@ -311,10 +311,10 @@
         },
         "geopy": {
             "hashes": [
-                "sha256:a373625acd0449a6b1f65ddad331021e3f0a79ec0f298dc2516c350c10cd84f5",
-                "sha256:1e02b749c812976a46fd4737e55020dbc4197a7510826d771531f41168aa3dde"
+                "sha256:2947f914c89d665e86b19466cce3600f0d0574a54a17c7ba609058a0ef0b5f24",
+                "sha256:9df0d61b431c51bcc47e64d16f9517dacfed10875f0dfc36cd8cb87c52fa9547"
             ],
-            "version": "==1.13.0"
+            "version": "==1.14.0"
         },
         "idna": {
             "hashes": [
@@ -477,10 +477,10 @@
         },
         "politico-civic-election-night": {
             "hashes": [
-                "sha256:595c61f2d6a1776f314e7cf13ce99bdc2c518dab5babf1eb985bbb7906510fda",
-                "sha256:7ac4b250e3ed3448887800bbda05fe8415958dca9dfdbbd9de2941efc6c32629"
+                "sha256:d39fe0774f250f3a77458e3e8905264850fd4970f622b80afea0c85bdd97cf5b",
+                "sha256:5f3298f7923ec025fa5b4c51852d7e1b788cf596a1c5c7c1155d39c28f8df6e7"
             ],
-            "version": "==0.2.11"
+            "version": "==0.2.12"
         },
         "politico-civic-entity": {
             "hashes": [
