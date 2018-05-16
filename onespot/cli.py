@@ -83,7 +83,7 @@ def election_init(date, target, test):
         test_flag = '--test'
     else:
         test_flag = ''
-    
+
     bootstrap_elex = 'bootstrap_elex {0} {1}'.format(date, test_flag)
     bootstrap_results_config = 'bootstrap_results_config {0}'.format(date)
     bootstrap_content = 'bootstrap_content {0}'.format(date)
@@ -93,7 +93,6 @@ def election_init(date, target, test):
         'fab', target, 'django.management:{0}'.format(bootstrap_results_config)
     ])
     run(['fab', target, 'django.management:{0}'.format(bootstrap_content)])
-
 
 
 @election.command('start')
@@ -150,3 +149,19 @@ def election_finish(date, target, test):
     )
     run(['fab', target, 'django.management:{}'.format(get_once)])
     run(['fab', target, 'django.management:{}'.format(reup_once)])
+
+
+@election.command('zeroes')
+@click.argument('date')
+@click.option('--test', is_flag=True, help='Pass test flag to elex')
+@click.option(
+    '--target', default='staging', help='The server environment to target'
+)
+def election_zeroes(date, target, test):
+    if test:
+        test_flag = '--test'
+    else:
+        test_flag = ''
+
+    get_zeroes = 'get_results {} {} --zeroes --run_once'.format(date, test_flag)
+    run(['fab', target, 'django.management:{}'.format(get_zeroes)])
