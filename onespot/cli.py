@@ -164,4 +164,6 @@ def election_zeroes(date, target, test):
         test_flag = ''
 
     get_zeroes = 'get_results {} {} --zeroes --run_once'.format(date, test_flag)
+    bake = 'bake_elections {}'.format(date)
     run(['fab', target, 'django.management:{}'.format(get_zeroes)])
+    run(['fab', target, 'django.management:{}'.format(bake)])
