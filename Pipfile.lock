@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "db04b75cf9d75be26f84c5d7003fd661292add22f06e8caab9ee49170d7060e7"
+            "sha256": "f065639ac46540aab8fe4b864de3ab51e9e4d675f83998f2485a4da65ab2048a"
         },
         "host-environment-markers": {
             "implementation_name": "cpython",
@@ -476,10 +476,10 @@
         },
         "politico-civic-election-night": {
             "hashes": [
-                "sha256:408291c0e07ed688b6c91a9938ac325fb9ebc0a6f2b31323c34082e00d21feda",
-                "sha256:42ee14832ed76db87d16c0bbe442aefc5ce39ddcf10271f2bb0a4b12f70d1040"
+                "sha256:3c81a759feeb4d69e67e690337d65116838f6f0592738b72a972689472c7bf12",
+                "sha256:707ad3190f8d1e6c622154ec406f851326e64c9fd8ff15704918fb4cdbb682fe"
             ],
-            "version": "==0.3.6"
+            "version": "==0.3.7"
         },
         "politico-civic-entity": {
             "hashes": [
