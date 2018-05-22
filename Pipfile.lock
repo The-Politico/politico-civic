@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "a74ee0f075ca01e66875721092fb4bc724f0079d257520ddeb6eec3a9e548d34"
+            "sha256": "4a71fabf372ab08826d1fa9fb7c086377b2d67b71e63bf889f30292928c8055c"
         },
         "host-environment-markers": {
             "implementation_name": "cpython",
@@ -168,6 +168,7 @@
                 "sha256:3c85641778460581c42924384f5e68076d724ceac0f267d66c757f7535069c93",
                 "sha256:e90f17980e6ab0f3c2f3730e56d1fe9bcba1891eeea58966e89d352492cc74f4"
             ],
+            "markers": "platform_python_implementation != 'PyPy'",
             "version": "==1.11.5"
         },
         "click": {
@@ -204,7 +205,6 @@
                 "sha256:702a91ade2968a82beb0db1e0766a6a273f33d4616a6ce8cde475d8e09853b20",
                 "sha256:24d7f2f94f7f3cb6061acb215685e5125fbcdc40a857eff9de22518820b0a4f4"
             ],
-            "markers": "python_version >= '3.0'",
             "version": "==0.5.0"
         },
         "dj-database-url": {
@@ -476,10 +476,10 @@
         },
         "politico-civic-election-night": {
             "hashes": [
-                "sha256:84aedfa1034ba229ac6fefe193559ebe6a5bb6017641d89a16f6dec3bb5e18ef",
-                "sha256:ba446ca6b25e6644c25b243078b28e930c274aee108cdd26ec306b3343f2ada5"
+                "sha256:d6b6621f9f7c68ab3331bd1d6e0d47c3b0727b87a8254704caf32afeedc61b92",
+                "sha256:cb7290450c887cec6a9e7317907468743a2565e7a70e747727efaf10315269ec"
             ],
-            "version": "==0.3.9"
+            "version": "==0.3.10"
         },
         "politico-civic-entity": {
             "hashes": [
@@ -660,6 +660,7 @@
             "hashes": [
                 "sha256:eec865307ebe7f329a6a9945c15453265a449cdaaf3710340828a1934d53e468"
             ],
+            "markers": "python_version >= '2.7'",
             "version": "==2.2"
         },
         "python-slugify": {
@@ -771,10 +772,10 @@
         },
         "tqdm": {
             "hashes": [
-                "sha256:9fc19da10d7c962613cbcb9cdced41230deb31d9e20332da84c96917ff534281",
-                "sha256:ce205451a27b6050faed0bb2bcbea96c6a550f8c27cd2b5441d72e948113ad18"
+                "sha256:224291ee0d8c52d91b037fd90806f48c79bcd9994d3b0abc9e44b946a908fccd",
+                "sha256:77b8424d41b31e68f437c6dd9cd567aebc9a860507cb42fbd880a5f822d966fe"
             ],
-            "version": "==4.23.3"
+            "version": "==4.23.4"
         },
         "ujson": {
             "hashes": [
