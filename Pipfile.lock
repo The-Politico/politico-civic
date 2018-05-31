@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "abd6bda4316cb65f76eb06d900a600171eefb5cbefeb7896e1b1ea54b6247708"
+            "sha256": "03cef51fe65b593e1552fa69ac41b88165348fc9a6519afaaaf3abcbf5e11b1e"
         },
         "host-environment-markers": {
             "implementation_name": "cpython",
@@ -100,17 +100,17 @@
         },
         "boto3": {
             "hashes": [
-                "sha256:35bc5737cd90034439e81e833dac1cf03ba5d1b2cbb78321a974d05d51934f60",
-                "sha256:dd54fd4b6d48fd47b6267efd829775e4c585d087cc5915df0908c212ba07dd8e"
+                "sha256:19d479abad241512051b11f681b93f37b1e6b03d8f2907daae94b4ca8d0da738",
+                "sha256:38a811f3335b08690182fdbddb07f0cb5e8f0b5bccbcf9ef606ed2a2508a9fd7"
             ],
-            "version": "==1.7.29"
+            "version": "==1.7.30"
         },
         "botocore": {
             "hashes": [
-                "sha256:03434f393c18c08ffe063076dc3b48d79c4ef0172ee15b069f73514ebe107291",
-                "sha256:076877fb12bedcb6f64b57c5ed4a07dd727e51c55f5e8046ab9b73a0b48cbb0a"
+                "sha256:8dac26094f3dbebd2849c0774f050daad3f1abf1b35fad7525916a36372fe009",
+                "sha256:1f6d0a135c9505e0840b675e6bd6b556c85df2e63212ac6850f77edf9f68311a"
             ],
-            "version": "==1.10.29"
+            "version": "==1.10.30"
         },
         "cachecontrol": {
             "hashes": [
@@ -204,7 +204,6 @@
                 "sha256:702a91ade2968a82beb0db1e0766a6a273f33d4616a6ce8cde475d8e09853b20",
                 "sha256:24d7f2f94f7f3cb6061acb215685e5125fbcdc40a857eff9de22518820b0a4f4"
             ],
-            "markers": "python_version >= '3.0'",
             "version": "==0.5.0"
         },
         "dj-database-url": {
@@ -476,10 +475,10 @@
         },
         "politico-civic-election-night": {
             "hashes": [
-                "sha256:1c6258547d0e8fa09d84f0a01b3093aeaf7605eb02de8fb323d1c0c545be26e4",
-                "sha256:5dbedab88b6910f6446a58600505057a8e6fd125ed3ed8a130c712d70bdc837b"
+                "sha256:2f76acbfd4900ffb97d0502b6d51aeb79c4917d084f64d6a218bfd343b3e901d",
+                "sha256:44c154cfefd1df5e54b2454e291af8d8264069b7f28a6b2d40a656aec5086ddf"
             ],
-            "version": "==0.4.3"
+            "version": "==0.4.4"
         },
         "politico-civic-entity": {
             "hashes": [
@@ -789,13 +788,6 @@
                 "sha256:77b8424d41b31e68f437c6dd9cd567aebc9a860507cb42fbd880a5f822d966fe"
             ],
             "version": "==4.23.4"
-        },
-        "twitter": {
-            "hashes": [
-                "sha256:52545fd3b70d3d3807d3ce62d1a256727856d784d1630d64dedcc643aaf0b908",
-                "sha256:acdc85e5beea752967bb64c63bde8b915c49a31a01db1b2fecccf9f2c1d5c44d"
-            ],
-            "version": "==1.18.0"
         },
         "ujson": {
             "hashes": [
