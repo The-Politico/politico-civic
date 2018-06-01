@@ -233,10 +233,10 @@ def start_service(service):
 
 
 @task
-def start_results(date, test=''):
+def start_results(date, test='', replay=''):
     service_name = _get_installed_service_name('results')
-    sudo('service {0} start DATE={1} TEST={2}'.format(
-        service_name, date, test
+    sudo('service {0} start DATE={1} TEST={2} REPLAY={3}'.format(
+        service_name, date, test, replay
     ))
 
 

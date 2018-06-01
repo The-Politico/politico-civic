@@ -167,3 +167,13 @@ def election_zeroes(date, target, test):
     bake = 'bake_elections {}'.format(date)
     run(['fab', target, 'django.management:{}'.format(get_zeroes)])
     run(['fab', target, 'django.management:{}'.format(bake)])
+
+
+@election.command('replay')
+@click.argument('date')
+@click.option(
+    '--target', default='staging', help='The server environment to target'
+)
+def election_test_replay(date, target):
+    run(['fab', target, 'servers.start_results:{0},,--replay'.format(date)])
+    run(['fab', target, 'servers.start_reup:{0}'.format(date)])
