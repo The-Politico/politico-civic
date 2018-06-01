@@ -98,7 +98,7 @@ def election_init(date, target, test):
 @election.command('start')
 @click.argument('date')
 @click.option('--test', is_flag=True, help='Pass test flag to elex')
-@click.option('--no-bot', is_flag=True, help='Pass no-bot flag to reup')
+@click.option('--nobot', is_flag=True, help='Pass no-bot flag to reup')
 @click.option(
     '--target', default='staging', help='The server environment to target'
 )
@@ -112,7 +112,7 @@ def election_start(date, target, test, no_bot):
         test_flag = ''
 
     if no_bot:
-        no_bot_flag = '--no-bot'
+        no_bot_flag = '--nobot'
     else:
         no_bot_flag = ''
 
