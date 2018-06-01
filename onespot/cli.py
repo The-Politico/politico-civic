@@ -102,7 +102,7 @@ def election_init(date, target, test):
 @click.option(
     '--target', default='staging', help='The server environment to target'
 )
-def election_start(date, target, test, no_bot):
+def election_start(date, target, test, nobot):
     """
     Starts results and reup processes on the server.
     """
@@ -111,7 +111,7 @@ def election_start(date, target, test, no_bot):
     else:
         test_flag = ''
 
-    if no_bot:
+    if nobot:
         no_bot_flag = '--nobot'
     else:
         no_bot_flag = ''
@@ -177,9 +177,15 @@ def election_zeroes(date, target, test):
 
 @election.command('replay')
 @click.argument('date')
+@click.option('--nobot', is_flag=True, help='Pass no-bot flag to reup')
 @click.option(
     '--target', default='staging', help='The server environment to target'
 )
-def election_test_replay(date, target):
+def election_test_replay(date, target, nobot):
+    if nobot:
+        no_bot_flag = '--nobot'
+    else:
+        no_bot_flag = ''
+
     run(['fab', target, 'servers.start_results:{0},,--replay'.format(date)])
-    run(['fab', target, 'servers.start_reup:{0}'.format(date)])
+    run(['fab', target, 'servers.start_reup:{0},{1}'.format(date, no_bot_flag)])
