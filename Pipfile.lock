@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "ff7081270937c4e1bc41595e02265a21a4d3e0bbc6a1ce9d58501b781af10ed2"
+            "sha256": "6feae65843ea5a87ffc1d7e9f7bec8dba916c1217c7542c1262972c9f81912ab"
         },
         "host-environment-markers": {
             "implementation_name": "cpython",
@@ -215,10 +215,10 @@
         },
         "django": {
             "hashes": [
-                "sha256:26b34f4417aa38d895b6b5307177b51bc3f4d53179d8696a5c19dcb50582523c",
-                "sha256:71d1a584bb4ad2b4f933d07d02c716755c1394feaac1ce61ce37843ac5401092"
+                "sha256:69ff89fa3c3a8337015478a1a0744f52a9fef5d12c1efa01a01f99bcce9bf10c",
+                "sha256:3eb25c99df1523446ec2dc1b00e25eb2ecbdf42c9d8b0b8b32a204a8db9011f8"
             ],
-            "version": "==2.0.5"
+            "version": "==2.0.6"
         },
         "django-cors-headers": {
             "hashes": [
@@ -475,10 +475,10 @@
         },
         "politico-civic-election-night": {
             "hashes": [
-                "sha256:a8fdcc91f9ae5b55c955c5f52e8f690cad2214f13be8a797905042df1a0e3b80",
-                "sha256:8d0270207e0471a7386a2e911845741a81a7338224e4497857dc415807bac2db"
+                "sha256:e0998b68b4bf288de573dab86dc77a6fc83a87c72a3cd195c279ecd8b1cd363c",
+                "sha256:098b8e6c27e36e1ae6981ea83e5a6e4513f33003c0220dc37857f40c96ebd1cf"
             ],
-            "version": "==0.4.6"
+            "version": "==0.4.7"
         },
         "politico-civic-entity": {
             "hashes": [
