@@ -241,9 +241,11 @@ def start_results(date, test='', replay=''):
 
 
 @task
-def start_reup(date):
+def start_reup(date, no_bot=''):
     service_name = _get_installed_service_name('reup')
-    sudo('service {0} start DATE={1}'.format(service_name, date))
+    sudo('service {0} start DATE={1} BOT={2}'.format(
+        service_name, date, no_bot
+    ))
 
 
 @task
