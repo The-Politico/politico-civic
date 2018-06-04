@@ -43,12 +43,12 @@ oauthlib==2.1.0
 packaging==17.1
 paramiko==2.4.1
 Pillow==5.1.0
--e git+https://github.com/The-Politico/politico-civic.git@eec58c3a3bdaf170eaae69a21767ab954b8819ba#egg=politico_civic
+-e git+https://github.com/The-Politico/politico-civic.git@660acc25cfc8e283ee38b28d8f5859ea7bbf8826#egg=politico_civic
 politico-civic-almanac==0.1.0
 politico-civic-biography==0.1.0
 politico-civic-demography==0.1.0
 politico-civic-election==0.1.1
-politico-civic-election-night==0.4.9
+politico-civic-election-night==0.5.0
 politico-civic-entity==0.1.0
 politico-civic-geography==0.3.2
 politico-civic-government==0.1.0
