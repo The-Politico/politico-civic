@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "7a768a88b2a40bc7d0561349ff778ff736f758c157c920da00c01f438f0e0a6b"
+            "sha256": "cbf0d629ec35404b41ea841c37728a0d2853b047379d5ddb8df8d2a3b2278514"
         },
         "host-environment-markers": {
             "implementation_name": "cpython",
@@ -204,6 +204,7 @@
                 "sha256:702a91ade2968a82beb0db1e0766a6a273f33d4616a6ce8cde475d8e09853b20",
                 "sha256:24d7f2f94f7f3cb6061acb215685e5125fbcdc40a857eff9de22518820b0a4f4"
             ],
+            "markers": "python_version >= '3.0'",
             "version": "==0.5.0"
         },
         "dj-database-url": {
@@ -475,10 +476,10 @@
         },
         "politico-civic-election-night": {
             "hashes": [
-                "sha256:99f30761730f889e1b76f8a69ed35b1a28d9a5d84e1f2d3c2e5ecb12b12a672b",
-                "sha256:2f92eb24a91b7e45991ae2e8b5af1b517efdab8442e731db24200c3846d4b824"
+                "sha256:9ba2111c9051047b6375e578402812faa5f84fcee3670c49b924283166ff42fa",
+                "sha256:f1c1b783f161bd398afa3434ce871e3bff9d8b1b20d6c2fd23f2eac625783858"
             ],
-            "version": "==0.5.10"
+            "version": "==0.5.11"
         },
         "politico-civic-entity": {
             "hashes": [
@@ -670,10 +671,10 @@
         },
         "python-twitter": {
             "hashes": [
-                "sha256:7a8583edd6a7fde3b84e8db7e7e68d80c146c628876bcbe9379a66212c5e8d0b",
-                "sha256:038c2af8131fab423e242386c7ee30334ef6b71cacea1c8f74f095a09cef6979"
+                "sha256:29b536a59edfb0b1f634ea8d98b91c4c5bd7514e91fab16af086604c627bebae",
+                "sha256:77ebcf2344b622d2fa1e54a851971e030ae313c754863b435e5c1827be97a721"
             ],
-            "version": "==3.4.1"
+            "version": "==3.4.2"
         },
         "python3-openid": {
             "hashes": [
@@ -764,10 +765,10 @@
         },
         "sphinx-rtd-theme": {
             "hashes": [
-                "sha256:32424dac2779f0840b4788fbccb032ba2496c1ca47a439ad2510c8b1e55dfd33",
-                "sha256:6d0481532b5f441b075127a2d755f430f1f8410a50112b1af6b069518548381d"
+                "sha256:aa3e190392e963551432de7df24b8a5fbe5b71a2f4fcd9d5b75808b52ad999e5",
+                "sha256:de88d637a60371d4f923e06b79c4ba260490c57d2ab5a8316942ab5d9a6ce1bf"
             ],
-            "version": "==0.3.1"
+            "version": "==0.4.0"
         },
         "sphinxcontrib-django": {
             "hashes": [
