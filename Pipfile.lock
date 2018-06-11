@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "7212ae1427b109a0f2f2fed15ee76173950e3d0b0192fdb02cbcfbddfc46d09e"
+            "sha256": "04a6fb368cb37f08cae53afc956b39cac4cfeb0d008233719d539d2ead62856b"
         },
         "host-environment-markers": {
             "implementation_name": "cpython",
@@ -120,10 +120,10 @@
         },
         "celery": {
             "hashes": [
-                "sha256:6fc4678d1692af97e137b2a9f1c04efd8e7e2fb7134c5c5ad60738cdd927762f",
-                "sha256:d1f2a3359bdbdfb344edce98b8e891f5fe64f8a11c5a45538ec20ac237c971f5"
+                "sha256:2082cbd82effa8ac8a8a58977d70bb203a9f362817e3b66f4578117b9f93d8a9",
+                "sha256:ff727c115533edbc7b81b2b4ba1ec88d1c2fc4836e1e2f4c3c33a76ff53e5d7f"
             ],
-            "version": "==4.1.1"
+            "version": "==4.2.0"
         },
         "cement": {
             "hashes": [
@@ -168,7 +168,6 @@
                 "sha256:3c85641778460581c42924384f5e68076d724ceac0f267d66c757f7535069c93",
                 "sha256:e90f17980e6ab0f3c2f3730e56d1fe9bcba1891eeea58966e89d352492cc74f4"
             ],
-            "markers": "platform_python_implementation != 'PyPy'",
             "version": "==1.11.5"
         },
         "click": {
@@ -317,10 +316,10 @@
         },
         "idna": {
             "hashes": [
-                "sha256:8c7309c718f94b3a625cb648ace320157ad16ff131ae0af362c9f21b80ef6ec4",
-                "sha256:2c6a5de3089009e3da7c5dde64a141dbc8551d5b7f6cf4ed7c2568d0cc520a8f"
+                "sha256:156a6814fb5ac1fc6850fb002e0852d56c0c8d2531923a51032d1b70760e186e",
+                "sha256:684a38a6f903c1d71d6d5fac066b58d7768af4de2b832e426ec79c30daa94a16"
             ],
-            "version": "==2.6"
+            "version": "==2.7"
         },
         "imagesize": {
             "hashes": [
@@ -476,10 +475,10 @@
         },
         "politico-civic-election-night": {
             "hashes": [
-                "sha256:6a3cd3bb3b906b3af9d0a3dfce9a581fa9c0a82215a0ef0f7a720841ca78b8fb",
-                "sha256:8e0016cf8c390ee7e7e803d6d679cbb76e825a489ff89ed8eac3497776b5df26"
+                "sha256:a694f8ef61862920e53ec483087556ff1abcb3109a0eb15fcbac50c9c2f57119",
+                "sha256:9242e25021b846980b4854b4277e80d401c53adb6e27d12d5c489039281ec5bf"
             ],
-            "version": "==0.6.0"
+            "version": "==0.6.1"
         },
         "politico-civic-entity": {
             "hashes": [
