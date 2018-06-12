@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "7788a990e9574f43966435abd4cc2fa49fb11e7ebd570b7a5fef56866bb9f316"
+            "sha256": "d8efe47db9e6d817c2d958eb15cec046e47b830e13de852bf27893705ffcfd27"
         },
         "host-environment-markers": {
             "implementation_name": "cpython",
@@ -100,17 +100,17 @@
         },
         "boto3": {
             "hashes": [
-                "sha256:6b2a3640da3e1282acee29a05494fa96d0850426233f50c49e46f6f07ea08c20",
-                "sha256:06b8bd0a6ecc875c5b7a73b023617a714e0aae2dda194c624790cb5ce3767919"
+                "sha256:4376b0844bc68c917e4e805638dfee1fcc08c3744e97f0465c09595140004adf",
+                "sha256:1023b6049cf542a48fc0dda536aef7c5702f76c34dccbe8ab1706d9cfb2c8a6b"
             ],
-            "version": "==1.7.35"
+            "version": "==1.7.36"
         },
         "botocore": {
             "hashes": [
-                "sha256:15bd5b023348b1b51caa8b2e70c99945031cc80b2610c3b4ed351774d04ab95d",
-                "sha256:7529de3954989d8433d65d9c57013f2109099a1b7d64f6a6f9e53c2ad6f9a06b"
+                "sha256:c29cdf7e3e8134c37a2f1535fbd513161504e2171acf3fba359f63945ed9c0f7",
+                "sha256:5edb2c13dfd7a797c285b2d611738d6aee2ab3cf08ead50c9d1e728f7fceccb1"
             ],
-            "version": "==1.10.35"
+            "version": "==1.10.36"
         },
         "cachecontrol": {
             "hashes": [
@@ -476,10 +476,10 @@
         },
         "politico-civic-election-night": {
             "hashes": [
-                "sha256:85caf6fc3bddac8106398046c9dfa40202e5e359f81e1a44c8d6270934eaf15d",
-                "sha256:9eeb77c532a9a4e24e9b92ec250bad010d956fe8128e305045deafa80ae73f48"
+                "sha256:e62c4f9ec2f5bbd43921c7013c148d5f0aaf6ce55ad0d850ad92ecee5cdb9cd8",
+                "sha256:fe9337fa83b7df37488a1ce22498286fd0fc959c97b047da3db1161ae985c552"
             ],
-            "version": "==0.6.2"
+            "version": "==0.6.3"
         },
         "politico-civic-entity": {
             "hashes": [
@@ -661,6 +661,7 @@
             "hashes": [
                 "sha256:eec865307ebe7f329a6a9945c15453265a449cdaaf3710340828a1934d53e468"
             ],
+            "markers": "python_version >= '2.7'",
             "version": "==2.2"
         },
         "python-slugify": {
