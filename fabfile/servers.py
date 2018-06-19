@@ -37,6 +37,7 @@ def setup():
 def install_extra_requirements():
     sudo('apt-get install jq -y')
     run('pip install awscli')
+    sudo('npm install topojson')
 
 
 @task
