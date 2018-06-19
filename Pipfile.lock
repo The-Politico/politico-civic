@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "b2dc4a2fc346dc4b514b65d36ca337577edde79a1639a1349fd95a0bccaad9e6"
+            "sha256": "db6a523697259afc261da80ccf91f852145b13cae1b1265cc38205cb377e84da"
         },
         "host-environment-markers": {
             "implementation_name": "cpython",
@@ -168,6 +168,7 @@
                 "sha256:3c85641778460581c42924384f5e68076d724ceac0f267d66c757f7535069c93",
                 "sha256:e90f17980e6ab0f3c2f3730e56d1fe9bcba1891eeea58966e89d352492cc74f4"
             ],
+            "markers": "platform_python_implementation != 'PyPy'",
             "version": "==1.11.5"
         },
         "click": {
@@ -489,11 +490,8 @@
             "version": "==0.2.0"
         },
         "politico-civic-geography": {
-            "hashes": [
-                "sha256:5aa63f5275396aaebb470b93f303830d024d2e89f12b3aa4104cfad32ca1104a",
-                "sha256:b3ef5db850bfacf8a7171b9034a6355a227dcade1fde9c2b94d0faa81efea014"
-            ],
-            "version": "==0.3.4"
+            "hashes": [],
+            "version": "==0.3.5"
         },
         "politico-civic-government": {
             "hashes": [
@@ -661,7 +659,6 @@
             "hashes": [
                 "sha256:eec865307ebe7f329a6a9945c15453265a449cdaaf3710340828a1934d53e468"
             ],
-            "markers": "python_version >= '2.7'",
             "version": "==2.2"
         },
         "python-slugify": {
