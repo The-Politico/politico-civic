@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "e5211b20e56fd03d70c9afb502e6e2a5971402ad16d744403951eb33bb0288a6"
+            "sha256": "5859eeeee1c8abf767e5b208cd4d8c1f13dd9c0df38c3fd37c4f7391edc9f5c0"
         },
         "host-environment-markers": {
             "implementation_name": "cpython",
@@ -100,17 +100,17 @@
         },
         "boto3": {
             "hashes": [
-                "sha256:5bd25459c8f506858753cb5e699c4c43af8c9b27e4aae32d9772f677068231b5",
-                "sha256:f4411a75892d3184324dabeeca23d40e5d0986e0a8c8659ba283ff04d2047068"
+                "sha256:7ba18f6edb603db7ef77733427f6f76a300aab217a9259649ddc91d4521b226f",
+                "sha256:5fcbfea71d7bf818ffc51a380b53899502b7046ca6ba52cca9c44bbfe20bb275"
             ],
-            "version": "==1.7.44"
+            "version": "==1.7.45"
         },
         "botocore": {
             "hashes": [
-                "sha256:f59795d7817273ca021b0e2544e78e2b8665a9ab724381afee273e66f86cb7de",
-                "sha256:2202634c6e0dcf4f7886fa87878af8cdba42a340bc6e56ff84515db8ba65cc5b"
+                "sha256:62519fe407354052befda5f928b988c9059a56292e75dba9d0fac31d9344e279",
+                "sha256:e62645374cbb01f65324fe479c2a389b414344db96db2f62b0f8a55701fe3416"
             ],
-            "version": "==1.10.44"
+            "version": "==1.10.45"
         },
         "cachecontrol": {
             "hashes": [
@@ -204,6 +204,7 @@
                 "sha256:702a91ade2968a82beb0db1e0766a6a273f33d4616a6ce8cde475d8e09853b20",
                 "sha256:24d7f2f94f7f3cb6061acb215685e5125fbcdc40a857eff9de22518820b0a4f4"
             ],
+            "markers": "python_version >= '3.0'",
             "version": "==0.5.0"
         },
         "dj-database-url": {
@@ -229,10 +230,10 @@
         },
         "django-environ": {
             "hashes": [
-                "sha256:e9c171b9d5f540e6f3bc42866941d9cd0bd77fb110a7c13a7c4857a2c08cfa40",
-                "sha256:ee2f8405d83137e3328b26b3de01bd715b5395fca22feb919dcc905fb6099cfa"
+                "sha256:c57b3c11ec1f319d9474e3e5a79134f40174b17c7cc024bbb2fad84646b120c4",
+                "sha256:6c9d87660142608f63ec7d5ce5564c49b603ea8ff25da595fd6098f6dc82afde"
             ],
-            "version": "==0.4.4"
+            "version": "==0.4.5"
         },
         "django-split-settings": {
             "hashes": [
@@ -475,10 +476,10 @@
         },
         "politico-civic-election-night": {
             "hashes": [
-                "sha256:12477e9b36caee6fd798e352eaee94a738a2464eb6df4ad019dbe7e2def4950d",
-                "sha256:920c60ca63001256e17f5605941b5ebb4abdadd13f643895585e313e8775edcd"
+                "sha256:d06d575ac431df5f75882cd9dcab276f655bda4dcc526e12563bf3d44eb0a94f",
+                "sha256:3baab72a9dc69725d0c7122d9c900f98d4a91de52d23ffb2b4967e7f994a9ae4"
             ],
-            "version": "==0.7.7"
+            "version": "==0.7.8"
         },
         "politico-civic-entity": {
             "hashes": [
@@ -660,7 +661,6 @@
             "hashes": [
                 "sha256:eec865307ebe7f329a6a9945c15453265a449cdaaf3710340828a1934d53e468"
             ],
-            "markers": "python_version >= '2.7'",
             "version": "==2.2"
         },
         "python-slugify": {
