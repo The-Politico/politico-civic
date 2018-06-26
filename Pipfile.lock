@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "886af367d7a940b046cbe579ffc44c5a01df57423d6b39f3da9cae006a56c5e5"
+            "sha256": "18749372cde27371a1805dc620884d1d5702f45a5ca8904efbb27531fd3316ba"
         },
         "host-environment-markers": {
             "implementation_name": "cpython",
@@ -100,17 +100,17 @@
         },
         "boto3": {
             "hashes": [
-                "sha256:7ba18f6edb603db7ef77733427f6f76a300aab217a9259649ddc91d4521b226f",
-                "sha256:5fcbfea71d7bf818ffc51a380b53899502b7046ca6ba52cca9c44bbfe20bb275"
+                "sha256:183d6f9263ef8fea55d5fae6d88f5a192a5f13ac0ab8812debf45aeaca4ebe59",
+                "sha256:bf69f95011241bf25adfb9db0f0fee5810c4145695c9b7d64ef6328a759f9a63"
             ],
-            "version": "==1.7.45"
+            "version": "==1.7.46"
         },
         "botocore": {
             "hashes": [
-                "sha256:62519fe407354052befda5f928b988c9059a56292e75dba9d0fac31d9344e279",
-                "sha256:e62645374cbb01f65324fe479c2a389b414344db96db2f62b0f8a55701fe3416"
+                "sha256:6fb914d92286089d230c08e21928994fc4af5d83c28d6c55d927096d3e62e6ad",
+                "sha256:95aceceb5c267e705934122c1687d8d0f841a387da8a7c6c497b13ec20e35f24"
             ],
-            "version": "==1.10.45"
+            "version": "==1.10.46"
         },
         "cachecontrol": {
             "hashes": [
@@ -168,7 +168,6 @@
                 "sha256:3c85641778460581c42924384f5e68076d724ceac0f267d66c757f7535069c93",
                 "sha256:e90f17980e6ab0f3c2f3730e56d1fe9bcba1891eeea58966e89d352492cc74f4"
             ],
-            "markers": "platform_python_implementation != 'PyPy'",
             "version": "==1.11.5"
         },
         "click": {
@@ -205,7 +204,6 @@
                 "sha256:702a91ade2968a82beb0db1e0766a6a273f33d4616a6ce8cde475d8e09853b20",
                 "sha256:24d7f2f94f7f3cb6061acb215685e5125fbcdc40a857eff9de22518820b0a4f4"
             ],
-            "markers": "python_version >= '3.0'",
             "version": "==0.5.0"
         },
         "dj-database-url": {
@@ -477,7 +475,7 @@
         },
         "politico-civic-election-night": {
             "hashes": [],
-            "version": "==0.7.9"
+            "version": "==0.7.10"
         },
         "politico-civic-entity": {
             "hashes": [
@@ -659,6 +657,7 @@
             "hashes": [
                 "sha256:eec865307ebe7f329a6a9945c15453265a449cdaaf3710340828a1934d53e468"
             ],
+            "markers": "python_version >= '2.7'",
             "version": "==2.2"
         },
         "python-slugify": {
