@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "aad1a4d70971d03b7f96d8e7789bd11a1ccacf4937aa3cb51b25f497af604424"
+            "sha256": "2dffdf3cdea687b23b6e19249aa1b35a151afa1edd88c515afb7a69971a69a7c"
         },
         "host-environment-markers": {
             "implementation_name": "cpython",
@@ -104,17 +104,17 @@
         },
         "boto3": {
             "hashes": [
-                "sha256:35cf3dc819f1cb8a6131044811dc8f538c61c4ce2aa3babb2832798df0539c08",
-                "sha256:e98692ba74c85ed45b7cf4cfbafd8676ca85a9313f2433d4c3275f7dd9e80263"
+                "sha256:08f268d6eb3347061384e144121dcca1e454a7a8b6c8424a23d3a312cdebab68",
+                "sha256:ce462e7505c03c3e6708ce6f264ac43d478886082af703ff69c502592df5d4f3"
             ],
-            "version": "==1.7.57"
+            "version": "==1.7.58"
         },
         "botocore": {
             "hashes": [
-                "sha256:6574a5fb16cffdab0491be154bc5f6e90608a3d393fcdc6b4b095157b77dfbc6",
-                "sha256:f15a09885492ea8b4c5d01d44af11e9938c9c17e09e1fe0d53701023023b2e56"
+                "sha256:17a88a578161dc12ecf14950afa93a354cf009380977921f7f52891acc5e751a",
+                "sha256:e0e6b6d1fdbce81c28151136ee919d2cdeee13041559710cd5c93d7e4035a455"
             ],
-            "version": "==1.10.57"
+            "version": "==1.10.58"
         },
         "cachecontrol": {
             "hashes": [
@@ -215,7 +215,6 @@
                 "sha256:702a91ade2968a82beb0db1e0766a6a273f33d4616a6ce8cde475d8e09853b20",
                 "sha256:24d7f2f94f7f3cb6061acb215685e5125fbcdc40a857eff9de22518820b0a4f4"
             ],
-            "markers": "python_version >= '3.0'",
             "version": "==0.5.0"
         },
         "dj-database-url": {
@@ -287,6 +286,12 @@
             ],
             "version": "==2.4.2"
         },
+        "et-xmlfile": {
+            "hashes": [
+                "sha256:614d9722d572f6246302c4491846d2c393c199cfa4edc9af593437691683335b"
+            ],
+            "version": "==1.0.1"
+        },
         "fabric3": {
             "hashes": [
                 "sha256:7c5a5f2eb3079eb6bd2a69931f1ca298844c730ce3fdc68111db16e8857a0408",
@@ -321,10 +326,10 @@
         },
         "geopy": {
             "hashes": [
-                "sha256:2947f914c89d665e86b19466cce3600f0d0574a54a17c7ba609058a0ef0b5f24",
-                "sha256:9df0d61b431c51bcc47e64d16f9517dacfed10875f0dfc36cd8cb87c52fa9547"
+                "sha256:8e02ef151c10dadacee3617f46494a1f80ef18943b507d417b3ad0ebdaa39844",
+                "sha256:c501942dbefd40e02497ec434213d0e7965427aac0748397bcda69a2372f6dcf"
             ],
-            "version": "==1.14.0"
+            "version": "==1.15.0"
         },
         "idna": {
             "hashes": [
@@ -339,6 +344,13 @@
                 "sha256:5b326e4678b6925158ccc66a9fa3122b6106d7c876ee32d7de6ce59385b96315"
             ],
             "version": "==1.0.0"
+        },
+        "jdcal": {
+            "hashes": [
+                "sha256:948fb8d079e63b4be7a69dd5f0cd618a0a57e80753de8248fd786a8a20658a07",
+                "sha256:ea0a5067c5f0f50ad4c7bdc80abad3d976604f6fb026b0b3a17a9d84bb9046c9"
+            ],
+            "version": "==1.4"
         },
         "jellyfish": {
             "hashes": [
@@ -394,6 +406,12 @@
                 "sha256:ac35665a61c1685c56336bda97d5eefa246f1202618a1d6f34fccb1bdd404162"
             ],
             "version": "==2.1.0"
+        },
+        "openpyxl": {
+            "hashes": [
+                "sha256:9239b74faf175dc4276a5fc277655fc53c2f704ded39e680d35e6a39e1913f69"
+            ],
+            "version": "==2.5.4"
         },
         "packaging": {
             "hashes": [
@@ -521,8 +539,11 @@
             "version": "==0.1.1"
         },
         "politico-civic-race-ratings": {
-            "hashes": [],
-            "version": "==0.0.0a0"
+            "hashes": [
+                "sha256:f0b8e7ff0800c2e0b0d0e6f4d704dcd9359a8ffc10f7a252647b2c0ece55e2ea",
+                "sha256:d3eb041a04a885b69ddb0229f63816456e7281fd9a06b33dd2169da0fcf1190b"
+            ],
+            "version": "==0.0.5"
         },
         "politico-civic-stump": {
             "hashes": [
@@ -793,10 +814,10 @@
         },
         "sphinx": {
             "hashes": [
-                "sha256:85f7e32c8ef07f4ba5aeca728e0f7717bef0789fba8458b8d9c5c294cad134f3",
-                "sha256:d45480a229edf70d84ca9fae3784162b1bc75ee47e480ffe04a4b7f21a95d76d"
+                "sha256:a765c6db1e5b62aae857697cd4402a5c1a315a7b0854bbcd0fc8cdc524da5896",
+                "sha256:217ad9ece2156ed9f8af12b5d2c82a499ddf2c70a33c5f81864a08d8c67b9efc"
             ],
-            "version": "==1.7.5"
+            "version": "==1.7.6"
         },
         "sphinx-rtd-theme": {
             "hashes": [

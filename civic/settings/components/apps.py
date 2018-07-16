@@ -20,5 +20,6 @@ INSTALLED_APPS = [
     'vote',
     'almanac',
     'electionnight',
+    'raceratings'
     # 'poll',
 ]

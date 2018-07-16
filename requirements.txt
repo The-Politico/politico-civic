@@ -24,6 +24,7 @@ django-uuslug==1.1.8
 djangorestframework==3.8.2
 docutils==0.14
 elex==2.4.2
+et-xmlfile==1.0.1
 Fabric3==1.14.post1
 flake8==3.5.0
 future==0.16.0
@@ -32,6 +33,7 @@ geojson==2.4.0
 geopy==1.14.0
 idna==2.6
 imagesize==1.0.0
+jdcal==1.4
 jellyfish==0.5.6
 Jinja2==2.10
 jmespath==0.9.3
@@ -40,10 +42,11 @@ lockfile==0.12.2
 MarkupSafe==1.0
 mccabe==0.6.1
 oauthlib==2.1.0
+openpyxl==2.5.4
 packaging==17.1
 paramiko==2.4.1
 Pillow==5.1.0
--e git+https://github.com/The-Politico/politico-civic.git@3ac87fed40cc4ec23cadc99628daf70f9afe0832#egg=politico_civic
+-e git+https://github.com/The-Politico/politico-civic.git@e3b39d99b28dd23acf5ff91e8da479e7ef933585#egg=politico_civic
 politico-civic-almanac==0.1.0
 politico-civic-biography==0.1.0
 politico-civic-demography==0.1.0
@@ -52,7 +55,7 @@ politico-civic-election-night==0.8.6
 politico-civic-entity==0.2.1
 politico-civic-geography==0.4.1
 politico-civic-government==0.1.1
-politico-civic-race-ratings==0.0.0a0
+politico-civic-race-ratings==0.0.5
 politico-civic-stump==0.1.0
 politico-civic-vote==0.1.4
 psycopg2==2.7.4
