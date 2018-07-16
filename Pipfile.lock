@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "64bfc2b1c4cc8dd9ad696e4b7c460fe9f0d68e462e0e6b609f757bffed4b5770"
+            "sha256": "ed58fd0a0342030a6cc2296dc43805a5d11090dd743444fb1841996d7b9a5360"
         },
         "host-environment-markers": {
             "implementation_name": "cpython",
@@ -601,11 +601,8 @@
             "version": "==0.1.1"
         },
         "politico-civic-race-ratings": {
-            "hashes": [
-                "sha256:f0b8e7ff0800c2e0b0d0e6f4d704dcd9359a8ffc10f7a252647b2c0ece55e2ea",
-                "sha256:d3eb041a04a885b69ddb0229f63816456e7281fd9a06b33dd2169da0fcf1190b"
-            ],
-            "version": "==0.0.5"
+            "hashes": [],
+            "version": "==0.0.6"
         },
         "politico-civic-stump": {
             "hashes": [

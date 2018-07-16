@@ -39,7 +39,7 @@ click = "*"
 django-split-settings = "*"
 elex = "==2.4.2"
 politico-civic-vote = "==0.1.4"
-politico-civic-race-ratings = "==0.0.5"
+politico-civic-race-ratings = "==0.0.6"
 openpyxl = "*"
 csvkit = "*"
 
