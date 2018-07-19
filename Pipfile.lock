@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "a769e012ccf9a80e8c385c51842b90098b45188f861979da21b3472e0980d1cc"
+            "sha256": "3b6a91ca7e9676cc6c090c86db212fa50e22902fbad7b199901f83635e3517f0"
         },
         "host-environment-markers": {
             "implementation_name": "cpython",
@@ -601,7 +601,7 @@
         },
         "politico-civic-race-ratings": {
             "hashes": [],
-            "version": "==0.0.7"
+            "version": "==0.0.8"
         },
         "politico-civic-stump": {
             "hashes": [
