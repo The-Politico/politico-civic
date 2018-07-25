@@ -4,6 +4,14 @@ provider "aws" {
   profile                 = "default"
 }
 
+terraform {
+  backend "s3" {
+    bucket = "politico-terraform-configs"
+    key = "civic/staging/terraform.tfstate"
+    region = "us-east-1"
+  }
+}
+
 ##################################################################
 # Data sources to get VPC, subnet, security group and AMI details
 ##################################################################
