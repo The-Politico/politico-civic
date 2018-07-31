@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "30ed41ead82745279760f3e5f2e0f6fe3a5b0c53a582686cdbcec98f999ba2b7"
+            "sha256": "4ca5844decf485f7259ccd81d56598401509bc2c0ddf89266a3ce7c676e92d25"
         },
         "host-environment-markers": {
             "implementation_name": "cpython",
@@ -130,17 +130,17 @@
         },
         "boto3": {
             "hashes": [
-                "sha256:f2477903f28577a6fba79d098921e6b3c6af14e47fb1b528c70558c127763c17",
-                "sha256:7d9de4269451fd4cb99cbd2c18075bf9d3a70f7fbc3bd3cc350c954403ad4ebd"
+                "sha256:3ec81575237a56a3cc31e963bb7ef8847752b41dd8343a8a758d466830215772",
+                "sha256:8f0f16ad7a6672b7748f2fa753f44007ada17ffb8767bb59dbd73f26ec6d265a"
             ],
-            "version": "==1.7.64"
+            "version": "==1.7.66"
         },
         "botocore": {
             "hashes": [
-                "sha256:af8b347f3df3fc9a7ba8c6f7bd35c18ba1dff12ca80036ed260eec07dc6f44be",
-                "sha256:977e8ab657747b3e60f4b597b9f732cbe467b12ecc52a9c5b2121c0006d41a63"
+                "sha256:e8e120af179aef5df247178c94627836239c1ffb22694087d48e3fc57af3062e",
+                "sha256:cc09308c7923331a330d02df055a966bd28657cb7b68b00ea1f3264599df133b"
             ],
-            "version": "==1.10.64"
+            "version": "==1.10.66"
         },
         "cachecontrol": {
             "hashes": [
@@ -365,10 +365,10 @@
         },
         "geopy": {
             "hashes": [
-                "sha256:8e02ef151c10dadacee3617f46494a1f80ef18943b507d417b3ad0ebdaa39844",
-                "sha256:c501942dbefd40e02497ec434213d0e7965427aac0748397bcda69a2372f6dcf"
+                "sha256:a70ff7d0fed8574384a033b46a0cd07ed7bf824901031da6e315f63e6d70394e",
+                "sha256:76654405eb69b01a2b8d113ab2ae101513cbeeb1272b0a472a7050631dadefa0"
             ],
-            "version": "==1.15.0"
+            "version": "==1.16.0"
         },
         "idna": {
             "hashes": [
@@ -572,7 +572,7 @@
         },
         "politico-civic-election-night": {
             "hashes": [],
-            "version": "==0.9.7"
+            "version": "==0.10.0"
         },
         "politico-civic-entity": {
             "hashes": [
@@ -773,6 +773,7 @@
             "hashes": [
                 "sha256:eec865307ebe7f329a6a9945c15453265a449cdaaf3710340828a1934d53e468"
             ],
+            "markers": "python_version >= '2.7'",
             "version": "==2.2"
         },
         "python-slugify": {
@@ -884,10 +885,10 @@
         },
         "sphinx-rtd-theme": {
             "hashes": [
-                "sha256:aa3e190392e963551432de7df24b8a5fbe5b71a2f4fcd9d5b75808b52ad999e5",
-                "sha256:de88d637a60371d4f923e06b79c4ba260490c57d2ab5a8316942ab5d9a6ce1bf"
+                "sha256:80e01ec0eb711abacb1fa507f3eae8b805ae8fa3e8b057abfdf497e3f644c82c",
+                "sha256:3b49758a64f8a1ebd8a33cb6cc9093c3935a908b716edfaa5772fd86aac27ef6"
             ],
-            "version": "==0.4.0"
+            "version": "==0.4.1"
         },
         "sphinxcontrib-django": {
             "hashes": [
@@ -911,10 +912,10 @@
         },
         "tqdm": {
             "hashes": [
-                "sha256:224291ee0d8c52d91b037fd90806f48c79bcd9994d3b0abc9e44b946a908fccd",
-                "sha256:77b8424d41b31e68f437c6dd9cd567aebc9a860507cb42fbd880a5f822d966fe"
+                "sha256:536e5a0205b6401d8aaf04b21469949c178dbe3642e3c76d3bb494a83cb22a10",
+                "sha256:60bbaa6700e87a250f6abcbbd7ddb33243ad592240ba46afce5305b15b406fad"
             ],
-            "version": "==4.23.4"
+            "version": "==4.24.0"
         },
         "ujson": {
             "hashes": [
