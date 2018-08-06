@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "4ca5844decf485f7259ccd81d56598401509bc2c0ddf89266a3ce7c676e92d25"
+            "sha256": "3df3ff5bb24e7ff8a0cdd49005932f8bafb1daa0dcc6fe4c9817f6d99e0c6943"
         },
         "host-environment-markers": {
             "implementation_name": "cpython",
@@ -130,17 +130,17 @@
         },
         "boto3": {
             "hashes": [
-                "sha256:3ec81575237a56a3cc31e963bb7ef8847752b41dd8343a8a758d466830215772",
-                "sha256:8f0f16ad7a6672b7748f2fa753f44007ada17ffb8767bb59dbd73f26ec6d265a"
+                "sha256:d0d849de20c938519df29e52d64210b408a67a20491e1e7d151588a60deef488",
+                "sha256:37853caa02f7141d7b1fb2537cc878bc58d2b1386224e3cf551af7f6ae3e4893"
             ],
-            "version": "==1.7.66"
+            "version": "==1.7.70"
         },
         "botocore": {
             "hashes": [
-                "sha256:e8e120af179aef5df247178c94627836239c1ffb22694087d48e3fc57af3062e",
-                "sha256:cc09308c7923331a330d02df055a966bd28657cb7b68b00ea1f3264599df133b"
+                "sha256:58b469e347865277e9713326709949f427f312eb9f64e5703de7128a6a90a5ad",
+                "sha256:7a3759d346bf297d33091a4c154d3c50f0c3dc7b428badb6c950f87ea390e5b1"
             ],
-            "version": "==1.10.66"
+            "version": "==1.10.70"
         },
         "cachecontrol": {
             "hashes": [
@@ -254,6 +254,7 @@
                 "sha256:702a91ade2968a82beb0db1e0766a6a273f33d4616a6ce8cde475d8e09853b20",
                 "sha256:24d7f2f94f7f3cb6061acb215685e5125fbcdc40a857eff9de22518820b0a4f4"
             ],
+            "markers": "python_version >= '3.0'",
             "version": "==0.5.0"
         },
         "dj-database-url": {
@@ -265,10 +266,10 @@
         },
         "django": {
             "hashes": [
-                "sha256:e900b73beee8977c7b887d90c6c57d68af10066b9dac898e1eaf0f82313de334",
-                "sha256:97886b8a13bbc33bfeba2ff133035d3eca014e2309dff2b6da0bdfc0b8656613"
+                "sha256:ea50d85709708621d956187c6b61d9f9ce155007b496dd914fdb35db8d790aec",
+                "sha256:7f246078d5a546f63c28fc03ce71f4d7a23677ce42109219c24c9ffb28416137"
             ],
-            "version": "==2.0.7"
+            "version": "==2.1"
         },
         "django-cors-headers": {
             "hashes": [
@@ -462,9 +463,9 @@
         },
         "openpyxl": {
             "hashes": [
-                "sha256:9239b74faf175dc4276a5fc277655fc53c2f704ded39e680d35e6a39e1913f69"
+                "sha256:0f391b0035d7c98f25aad539726e8efc77eea250ff1a120ea7d264c03a16f5fe"
             ],
-            "version": "==2.5.4"
+            "version": "==2.5.5"
         },
         "packaging": {
             "hashes": [
@@ -572,7 +573,7 @@
         },
         "politico-civic-election-night": {
             "hashes": [],
-            "version": "==0.10.0"
+            "version": "==0.10.1"
         },
         "politico-civic-entity": {
             "hashes": [
@@ -773,7 +774,6 @@
             "hashes": [
                 "sha256:eec865307ebe7f329a6a9945c15453265a449cdaaf3710340828a1934d53e468"
             ],
-            "markers": "python_version >= '2.7'",
             "version": "==2.2"
         },
         "python-slugify": {
