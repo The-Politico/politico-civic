@@ -22,6 +22,18 @@ def election():
     """Manages election nights."""
 
 
+@server.command('init')
+@click.option(
+    '--target', default='staging', help='The server environment to target'
+)
+def server_init(target):
+    """
+    Creates a new server through terraform
+    """
+    os.chdir('terraform/{}'.format(target))
+    run(['terraform', 'init'])
+
+
 @server.command('launch')
 @click.option(
     '--target', default='staging', help='The server environment to target'
