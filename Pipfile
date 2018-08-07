@@ -1,12 +1,17 @@
 [[source]]
+
 url = "https://pypi.python.org/simple"
 verify_ssl = true
 name = "pypi"
 
+
 [requires]
+
 python_version = "3.6"
 
+
 [packages]
+
 django = "==2.0.8"
 "flake8" = "*"
 "fabric3" = "*"
@@ -21,7 +26,7 @@ sphinx = "*"
 celery = "*"
 sphinxcontrib-django = "*"
 sphinx-rtd-theme = "*"
-politico-civic-election-night = "==0.10.4"
+politico-civic-election-night = "==0.10.5"
 politico-civic-entity = "==0.2.1"
 politico-civic-geography = "==0.4.1"
 politico-civic-government = "==0.1.1"
@@ -38,4 +43,6 @@ politico-civic-race-ratings = "==0.0.10"
 openpyxl = "*"
 csvkit = "*"
 
+
 [dev-packages]
+
