@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "35595e65e96442565628549f4131aedcf1fb01a8f4ff4df0f36ac6e26e64d1dd"
+            "sha256": "6a1b48a68fba824bfee49360b429f49b8f880b2d1f217ea49a31d2fa478ab1a6"
         },
         "host-environment-markers": {
             "implementation_name": "cpython",
@@ -130,17 +130,17 @@
         },
         "boto3": {
             "hashes": [
-                "sha256:d0d849de20c938519df29e52d64210b408a67a20491e1e7d151588a60deef488",
-                "sha256:37853caa02f7141d7b1fb2537cc878bc58d2b1386224e3cf551af7f6ae3e4893"
+                "sha256:71ee5169b6957298fb178b294452592cd7c734e5c0d1a67487b56f993085f254",
+                "sha256:1fb25a1d8455b97276ef5f1e14255c04f59a985a14ddb69804ddf6c8a3449e08"
             ],
-            "version": "==1.7.70"
+            "version": "==1.7.71"
         },
         "botocore": {
             "hashes": [
-                "sha256:58b469e347865277e9713326709949f427f312eb9f64e5703de7128a6a90a5ad",
-                "sha256:7a3759d346bf297d33091a4c154d3c50f0c3dc7b428badb6c950f87ea390e5b1"
+                "sha256:ffa673c9a53f3ab4eba4ce8cf9d736177ca67509827e716cb5070f0b621fb0a7",
+                "sha256:9302ad235db66efa9d11c664b1cb0b259826d82a206446460ea05bcfcc431a4a"
             ],
-            "version": "==1.10.70"
+            "version": "==1.10.71"
         },
         "cachecontrol": {
             "hashes": [
@@ -254,7 +254,6 @@
                 "sha256:702a91ade2968a82beb0db1e0766a6a273f33d4616a6ce8cde475d8e09853b20",
                 "sha256:24d7f2f94f7f3cb6061acb215685e5125fbcdc40a857eff9de22518820b0a4f4"
             ],
-            "markers": "python_version >= '3.0'",
             "version": "==0.5.0"
         },
         "dj-database-url": {
@@ -601,10 +600,10 @@
         },
         "politico-civic-race-ratings": {
             "hashes": [
-                "sha256:fa5339399165642363aaf95f2ae44270a8c43d5b02d2a66b03fa158ed7a38e69",
-                "sha256:3deb27074f5a6470eaf684e33ada16eacd7c658b05a42a71dbbd07a8353816d8"
+                "sha256:df6a235f21bb348615b3c0728b34e0a8c83090aaac094a03279982010b915e93",
+                "sha256:06729c90fb8bc1a7bc13956bb9aecc2113b841742167efa928d55a02d75b2cb7"
             ],
-            "version": "==0.0.9"
+            "version": "==0.0.10"
         },
         "politico-civic-stump": {
             "hashes": [
