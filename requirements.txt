@@ -21,7 +21,7 @@ csvkit==1.0.3
 dbfread==2.0.7
 defusedxml==0.5.0
 dj-database-url==0.5.0
-Django==2.1
+Django==2.0.8
 django-cors-headers==2.4.0
 django-environ==0.4.5
 django-split-settings==0.3.0
@@ -55,7 +55,7 @@ packaging==17.1
 paramiko==2.4.1
 parsedatetime==2.4
 Pillow==5.2.0
--e git+https://github.com/The-Politico/politico-civic.git@fc4711f29fe6c3af0a41eee3597aab49465012b7#egg=politico_civic
+-e git+https://github.com/The-Politico/politico-civic.git@1e540f9eb476f0ddd7f516a2e50e9a813ba7eacc#egg=politico_civic
 politico-civic-almanac==0.1.0
 politico-civic-biography==0.1.0
 politico-civic-demography==0.1.0

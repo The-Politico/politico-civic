@@ -7,7 +7,7 @@ name = "pypi"
 python_version = "3.6"
 
 [packages]
-django = "*"
+django = "==2.0.8"
 "flake8" = "*"
 "fabric3" = "*"
 "jinja2" = "*"
