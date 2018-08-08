@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "9294fe27f5681d40670e52c0d314a2f9a5f89fa8f0fa305d5a75f7a0082a7cb3"
+            "sha256": "9dd6d7dfc172cff2b14322fbea3f340b0d56e1d125abece7c41e351e0751daae"
         },
         "host-environment-markers": {
             "implementation_name": "cpython",
@@ -130,17 +130,17 @@
         },
         "boto3": {
             "hashes": [
-                "sha256:71ee5169b6957298fb178b294452592cd7c734e5c0d1a67487b56f993085f254",
-                "sha256:1fb25a1d8455b97276ef5f1e14255c04f59a985a14ddb69804ddf6c8a3449e08"
+                "sha256:dc6e42f53218acd13035f90437cd3ae2080076c41eecfa466264641700d18e5e",
+                "sha256:126451821f990dea356d3bf53788f50d869f6cdfb258c0f402f20c36eb64e179"
             ],
-            "version": "==1.7.71"
+            "version": "==1.7.72"
         },
         "botocore": {
             "hashes": [
-                "sha256:ffa673c9a53f3ab4eba4ce8cf9d736177ca67509827e716cb5070f0b621fb0a7",
-                "sha256:9302ad235db66efa9d11c664b1cb0b259826d82a206446460ea05bcfcc431a4a"
+                "sha256:9857181af3f5c6784fb6a028eeb01d9681ec2202162625590c215539598fc1aa",
+                "sha256:5c282b9a6f694ce62e5fc9f0d5aa019c2d977509058f588416f1c8cc1ad78a0b"
             ],
-            "version": "==1.10.71"
+            "version": "==1.10.72"
         },
         "cachecontrol": {
             "hashes": [
@@ -571,11 +571,8 @@
             "version": "==0.1.3"
         },
         "politico-civic-election-night": {
-            "hashes": [
-                "sha256:cbc803a9ec7313e8e61edecd52f8c7614e889d2f5e4d0b2b518fdfd012664c1d",
-                "sha256:886d99a563154a41aa475e8bad5154b7cc12fed1ed8eba92d715866dbb6caaed"
-            ],
-            "version": "==0.10.5"
+            "hashes": [],
+            "version": "==0.10.6"
         },
         "politico-civic-entity": {
             "hashes": [
@@ -776,6 +773,7 @@
             "hashes": [
                 "sha256:eec865307ebe7f329a6a9945c15453265a449cdaaf3710340828a1934d53e468"
             ],
+            "markers": "python_version >= '2.7'",
             "version": "==2.2"
         },
         "python-slugify": {
