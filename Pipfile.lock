@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "3aca817737a7a1acad964162455401d4d2155de6f3c2a4780291ffde46b1ba8a"
+            "sha256": "2e5924d6cc194189bbf467d4b2c08bd205e84352636ad7300d4321de740fcb6c"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -244,7 +244,6 @@
                 "sha256:24d7f2f94f7f3cb6061acb215685e5125fbcdc40a857eff9de22518820b0a4f4",
                 "sha256:702a91ade2968a82beb0db1e0766a6a273f33d4616a6ce8cde475d8e09853b20"
             ],
-            "markers": "python_version >= '3.0'",
             "version": "==0.5.0"
         },
         "dictobject": {
@@ -263,11 +262,11 @@
         },
         "django": {
             "hashes": [
-                "sha256:7f246078d5a546f63c28fc03ce71f4d7a23677ce42109219c24c9ffb28416137",
-                "sha256:ea50d85709708621d956187c6b61d9f9ce155007b496dd914fdb35db8d790aec"
+                "sha256:0c5b65847d00845ee404bbc0b4a85686f15eb3001ffddda3db4e9baa265bf136",
+                "sha256:68aeea369a8130259354b6ba1fa9babe0c5ee6bced505dea4afcd00f765ae38b"
             ],
             "index": "pypi",
-            "version": "==2.1"
+            "version": "==2.0.8"
         },
         "django-cors-headers": {
             "hashes": [
@@ -588,11 +587,11 @@
         },
         "politico-civic-election-night": {
             "hashes": [
-                "sha256:b728172a07ff3ff89d9ff34778cc3452d2598dcfdc0ee5e8e75fa4c90bd56215",
-                "sha256:ec8dac970b08af927258f9bafc72ac939f25cc43b5cf864e66d7e4ce4977b9f9"
+                "sha256:07be21c6be47ec4bd9493190024f50fed249f4169938a19258f195e866624d76",
+                "sha256:f26bce71e311b28aeaa46212f4475696a5ac529b1e51f366f8c1036bb0541585"
             ],
             "index": "pypi",
-            "version": "==0.10.4"
+            "version": "==0.10.7"
         },
         "politico-civic-entity": {
             "hashes": [
@@ -620,11 +619,11 @@
         },
         "politico-civic-race-ratings": {
             "hashes": [
-                "sha256:3deb27074f5a6470eaf684e33ada16eacd7c658b05a42a71dbbd07a8353816d8",
-                "sha256:fa5339399165642363aaf95f2ae44270a8c43d5b02d2a66b03fa158ed7a38e69"
+                "sha256:06729c90fb8bc1a7bc13956bb9aecc2113b841742167efa928d55a02d75b2cb7",
+                "sha256:df6a235f21bb348615b3c0728b34e0a8c83090aaac094a03279982010b915e93"
             ],
             "index": "pypi",
-            "version": "==0.0.9"
+            "version": "==0.0.10"
         },
         "politico-civic-stump": {
             "hashes": [
