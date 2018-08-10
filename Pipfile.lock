@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "2e5924d6cc194189bbf467d4b2c08bd205e84352636ad7300d4321de740fcb6c"
+            "sha256": "61b0fa7cf72aa5d034c9d63a9cfcb29b1f71216e3f0372295da65d116a1cc1c7"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -244,6 +244,7 @@
                 "sha256:24d7f2f94f7f3cb6061acb215685e5125fbcdc40a857eff9de22518820b0a4f4",
                 "sha256:702a91ade2968a82beb0db1e0766a6a273f33d4616a6ce8cde475d8e09853b20"
             ],
+            "markers": "python_version >= '3.0'",
             "version": "==0.5.0"
         },
         "dictobject": {
@@ -587,11 +588,10 @@
         },
         "politico-civic-election-night": {
             "hashes": [
-                "sha256:07be21c6be47ec4bd9493190024f50fed249f4169938a19258f195e866624d76",
-                "sha256:f26bce71e311b28aeaa46212f4475696a5ac529b1e51f366f8c1036bb0541585"
+                "sha256:0ed6bb111edd11e96ed8c31c8766a86ceb3e035b1c26a938db89cf1b6ef4bd9f"
             ],
             "index": "pypi",
-            "version": "==0.10.7"
+            "version": "==0.10.8"
         },
         "politico-civic-entity": {
             "hashes": [
