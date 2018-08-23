@@ -7,7 +7,7 @@ provider "aws" {
 terraform {
   backend "s3" {
     bucket = "politico-terraform-configs"
-    key = "civic/staging/terraform.tfstate"
+    key = "civic/production/terraform.tfstate"
     region = "us-east-1"
   }
 }
