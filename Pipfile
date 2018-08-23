@@ -1,10 +1,7 @@
 [[source]]
-url = "https://pypi.python.org/simple"
+url = "https://pypi.org/simple"
 verify_ssl = true
 name = "pypi"
-
-[requires]
-python_version = "3.6"
 
 [packages]
 django = "==2.0.8"
@@ -39,3 +36,6 @@ openpyxl = "*"
 csvkit = "*"
 
 [dev-packages]
+
+[requires]
+python_version = "3.6"
