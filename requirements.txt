@@ -9,7 +9,7 @@ Babel==2.6.0
 bcrypt==3.1.4
 billiard==3.5.0.4
 boto3==1.7.72
-botocore==1.10.72
+botocore==1.10.83
 CacheControl==0.11.7
 celery==4.2.1
 cement==2.10.2
@@ -57,7 +57,7 @@ packaging==17.1
 paramiko==2.4.1
 parsedatetime==2.4
 Pillow==5.2.0
--e git+https://github.com/The-Politico/politico-civic.git@dd05ef389196b8ffd63d7b556fb81545f88f8c51#egg=politico_civic
+-e git+https://github.com/The-Politico/politico-civic.git@7a2d6a7c6f0948882678dbc6db50e6d9d1dbf328#egg=politico_civic
 politico-civic-almanac==0.1.0
 politico-civic-biography==0.1.0
 politico-civic-demography==0.1.2
@@ -66,7 +66,7 @@ politico-civic-election-night==0.11.2
 politico-civic-entity==0.2.1
 politico-civic-geography==0.4.2
 politico-civic-government==0.1.1
-politico-civic-race-ratings==0.1.0
+politico-civic-race-ratings==0.1.1
 politico-civic-stump==0.1.0
 politico-civic-vote==0.1.4
 psycopg2==2.7.5
