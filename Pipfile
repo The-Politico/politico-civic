@@ -1,9 +1,12 @@
 [[source]]
+
 url = "https://pypi.org/simple"
 verify_ssl = true
 name = "pypi"
 
+
 [packages]
+
 django = "==2.0.8"
 "flake8" = "*"
 "fabric3" = "*"
@@ -31,12 +34,16 @@ click = "*"
 django-split-settings = "*"
 elex = "==2.4.2"
 politico-civic-vote = "*"
-politico-civic-race-ratings = "==0.2.0"
+politico-civic-race-ratings = "==0.2.1"
 openpyxl = "*"
 csvkit = "*"
 botocore = "==1.10.83"
 
+
 [dev-packages]
 
+
+
 [requires]
+
 python_version = "3.6"
