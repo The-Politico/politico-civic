@@ -37,6 +37,7 @@ csvkit = "*"
 botocore = "==1.12.26"
 python-dateutil = "==2.2"
 politico-civic-ap-loader = "==0.2.5"
+"boto3" = "==1.9.26"
 
 [dev-packages]
 

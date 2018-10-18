@@ -8,7 +8,7 @@ asn1crypto==0.24.0
 Babel==2.6.0
 bcrypt==3.1.4
 billiard==3.5.0.4
-boto3==1.7.72
+boto3==1.9.26
 botocore==1.12.26
 CacheControl==0.11.7
 celery==4.2.1
@@ -57,7 +57,7 @@ packaging==17.1
 paramiko==2.4.1
 parsedatetime==2.4
 Pillow==5.2.0
--e git+https://github.com/The-Politico/politico-civic.git@a59a26595269ba3a4144cea72b82182ee2082dac#egg=politico_civic
+-e git+https://github.com/The-Politico/politico-civic.git@ab6f9f0aa6239452b67aded77b9e81df70656ee4#egg=politico_civic
 politico-civic-almanac==0.1.0
 politico-civic-ap-loader==0.2.5
 politico-civic-biography==0.1.0
