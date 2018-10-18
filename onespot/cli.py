@@ -96,18 +96,12 @@ def election_init(date, target, test):
     else:
         test_flag = ""
 
-    bootstrap_elex = "bootstrap_elex {0} {1}".format(date, test_flag)
-    bootstrap_results_config = "bootstrap_results_config {0}".format(date)
-    bootstrap_content = "bootstrap_content {0}".format(date)
+    bootstrap_elex = "initialize_election_date_wrapped {0} {1}".format(
+        date, test_flag
+    )
+    bootstrap_content = "bootstrap_electionnight_content {0}".format(date)
 
     run(["fab", target, "django.management:{0}".format(bootstrap_elex)])
-    run(
-        [
-            "fab",
-            target,
-            "django.management:{0}".format(bootstrap_results_config),
-        ]
-    )
     run(["fab", target, "django.management:{0}".format(bootstrap_content)])
 
 
