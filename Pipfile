@@ -35,6 +35,7 @@ politico-civic-race-ratings = "==0.2.3"
 openpyxl = "*"
 csvkit = "*"
 botocore = "==1.10.83"
+politico-civic-ap-loader = "*"
 
 [dev-packages]
 
