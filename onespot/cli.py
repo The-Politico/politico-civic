@@ -130,7 +130,14 @@ def election_start(date, target, test, nobot):
         [
             "fab",
             target,
-            "servers.start_results:{0},{1}".format(date, test_flag),
+            "servers.start_state_results:{0},{1}".format(date, test_flag),
+        ]
+    )
+    run(
+        [
+            "fab",
+            target,
+            "servers.start_county_results:{0},{1}".format(date, test_flag),
         ]
     )
     run(
@@ -146,8 +153,9 @@ def election_stop(target):
     """
     Stops results and reup processes on the server.
     """
-    run(["fab", target, "servers.stop_results"])
-    run(["fab", target, "servers.stop_service:reup"])
+    run(["fab", target, "servers.stop_state_results"])
+    run(["fab", target, "servers.stop_county_results"])
+    run(["fab", target, "servers.stop_reup"])
 
 
 @election.command("finish")

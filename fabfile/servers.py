@@ -10,7 +10,7 @@ import logging
 from jinja2 import Template
 
 import server_config
-from fabric.api import cd, local, put, run, settings, sudo, task
+from fabric.api import cd, local, put, roles, run, settings, sudo, task
 from fabric.state import env
 
 logging.basicConfig(format=server_config.LOG_FORMAT)
@@ -35,9 +35,10 @@ def setup():
 
 @task
 def install_extra_requirements():
+    sudo("apt-get update")
     sudo("apt-get install jq -y")
     run("pip install awscli")
-    sudo("npm install topojson")
+    sudo("npm install -g topojson")
 
 
 @task
@@ -70,8 +71,12 @@ def setup_logs():
     """
     Create log directories.
     """
-    sudo("mkdir %(SERVER_LOG_PATH)s" % server_config.__dict__)
-    sudo("touch %(SERVER_LOG_PATH)s/django.log" % server_config.__dict__)
+    try:
+        sudo("mkdir %(SERVER_LOG_PATH)s" % server_config.__dict__)
+        sudo("touch %(SERVER_LOG_PATH)s/django.log" % server_config.__dict__)
+    except:
+        pass
+
     sudo("chown ubuntu:ubuntu %(SERVER_LOG_PATH)s" % server_config.__dict__)
 
 
@@ -80,7 +85,7 @@ def setup_cert():
     """
     Create SSL certificate on the server
     """
-    sudo("certbot --nginx -d {} certonly".format(env.hosts[0]))
+    sudo("certbot --nginx -d {} certonly".format(env.host_string))
 
 
 @task
@@ -152,7 +157,7 @@ def render_confs():
     # Copy the server_config so that when we load the secrets they don't
     # get exposed to other management commands
     context = copy.copy(server_config.__dict__)
-    context["SERVERS"] = env.hosts
+    context["SERVER"] = env.host_string
     if env.hosts[0].endswith(".com"):
         context["SSL"] = True
     else:
@@ -249,7 +254,9 @@ def start_service(service):
 
 
 @task
-def start_results(date, test="", replay=""):
+@roles("east")
+def start_state_results(date, test="", replay=""):
+    print(env.roledefs)
     state = _get_installed_service_name("state_results")
     sudo(
         "service {0} start DATE={1} TEST={2} REPLAY={3}".format(
@@ -257,6 +264,10 @@ def start_results(date, test="", replay=""):
         )
     )
 
+
+@task
+@roles("west")
+def start_county_results(date, test="", replay=""):
     county = _get_installed_service_name("county_results")
     sudo(
         "service {0} start DATE={1} TEST={2} REPLAY={3}".format(
@@ -266,20 +277,33 @@ def start_results(date, test="", replay=""):
 
 
 @task
-def stop_results():
+@roles("east")
+def stop_state_results():
     state = _get_installed_service_name("state_results")
     sudo("service {0} stop".format(state))
 
+
+@task
+@roles("west")
+def stop_county_results():
     county = _get_installed_service_name("county_results")
     sudo("service {0} stop".format(county))
 
 
 @task
+@roles("east")
 def start_reup(date, no_bot=""):
     service_name = _get_installed_service_name("reup")
     sudo(
         "service {0} start DATE={1} BOT={2}".format(service_name, date, no_bot)
     )
+
+
+@task
+@roles("east")
+def stop_reup():
+    service_name = _get_installed_service_name("reup")
+    sudo("service {0} stop".format(service_name))
 
 
 @task
