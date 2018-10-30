@@ -21,8 +21,8 @@ Changing branches requires deploying that branch to a host.
 def production():
     env.hosts = server_config.PRODUCTION_SERVERS
     env.roledefs = {
-        "east": server_config.PRODUCTION_SERVERS[0],
-        "west": server_config.PRODUCTION_SERVERS[1],
+        "east": [server_config.PRODUCTION_SERVERS[0]],
+        "west": [server_config.PRODUCTION_SERVERS[1]],
     }
 
 
