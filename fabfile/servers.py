@@ -255,6 +255,14 @@ def start_service(service):
 
 @task
 @roles("east")
+def start_bakery():
+    print(env.roledefs)
+    bake = _get_installed_service_name("bake")
+    sudo("service {0} start".format(bake))
+
+
+@task
+@roles("east")
 def start_state_results(date, test="", replay=""):
     print(env.roledefs)
     state = _get_installed_service_name("state_results")
@@ -274,6 +282,13 @@ def start_county_results(date, test="", replay=""):
             county, date, test, replay
         )
     )
+
+
+@task
+@roles("east")
+def stop_bakery():
+    bake = _get_installed_service_name("bake")
+    sudo("service {0} stop".format(bake))
 
 
 @task

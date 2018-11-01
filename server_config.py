@@ -6,12 +6,16 @@ DO NOT STORE SECRETS, PASSWORDS, ETC. IN THIS FILE.
 They will be exposed to users. Use environment variables instead.
 See get_secrets() below for a fast way to access them.
 """
-
+from dotenv import load_dotenv
 import logging
+import os
+
+load_dotenv()
 
 """
 NAMES
 """
+
 
 # Project name to be used in urls
 # Use dashes, not underscores!
@@ -54,6 +58,7 @@ SERVER_SERVICES = [
     ("county_results", "/etc/init", "conf"),
     ("reup", "/etc/init", "conf"),
     ("celery", "/etc/init", "conf"),
+    ("bake", "/etc/init", "conf"),
 ]
 
 """
@@ -62,3 +67,6 @@ Logging
 LOG_FORMAT = "%(levelname)s:%(name)s:%(asctime)s: %(message)s"
 SERVER_LOG_PATH = "/var/log/%s" % PROJECT_FILENAME
 LOG_LEVEL = logging.DEBUG
+
+LAMBDA_ENDPOINT = os.getenv('LAMBDA_ENDPOINT')
+LAMBDA_RESULTS_INTERVAL = 60

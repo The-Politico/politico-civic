@@ -57,7 +57,7 @@ packaging==17.1
 paramiko==2.4.1
 parsedatetime==2.4
 Pillow==5.2.0
--e git+https://github.com/The-Politico/politico-civic.git@ef2b20f910a42e54980ab82a07eb5e0ff7eb8817#egg=politico_civic
+-e git+https://github.com/The-Politico/politico-civic.git@ad4741836c445770d0e8305e1dcf0dc9dae4f62f#egg=politico_civic
 politico-civic-almanac==0.1.0
 politico-civic-ap-loader==0.3.0
 politico-civic-biography==0.1.0
@@ -83,6 +83,7 @@ PyNaCl==1.2.1
 pyparsing==2.2.0
 pyshp==1.2.12
 python-dateutil==2.2
+python-dotenv==0.9.1
 python-slugify==1.2.5
 python-twitter==3.4.2
 python3-openid==3.1.0
