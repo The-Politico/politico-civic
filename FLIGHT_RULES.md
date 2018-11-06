@@ -10,3 +10,15 @@
     2. On east server, check `/var/log/politico-civic/state_results.log` and `/var/log/politico-civic/reup.log`
     3. On west server, check `/var/log/politico-civic/county-results.log`
     4. If all is well, make sure pages work
+
+### Local
+
+
+1. Drop local database, recreate and migrate
+2. `python manage.py bootstrap_electionnight`
+3. Go into the database and change South Dakota's Shannon County to Oglala Lakota County. Make the fips code `46102`. Ugh.
+4. `python manage.py initialize_election_date_wrapped 2018-11-06`
+5. `python manage.py bootstrap_electionnight_content 2018-11-06`
+6. See the changes in step 4 above.
+7. Feature races for national body pages.
+8. `python manage.py bake_elections 2018-11-06`
