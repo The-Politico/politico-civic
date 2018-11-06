@@ -13,12 +13,14 @@
 
 ### Local
 
+NOTE: I would set your `ELECTIONNIGHT_AWS_S3_BUCKET` to staging, just in case any signals fire and deploy incomplete data to prod.
 
 1. Drop local database, recreate and migrate
 2. `python manage.py bootstrap_electionnight`
-3. Go into the database and change South Dakota's Shannon County to Oglala Lakota County. Make the fips code `46102`. Ugh.
+3. Go into the database and change South Dakota's Shannon County, which is fips code `46113`, to Oglala Lakota County. Make the fips code `46102`. Ugh.
 4. `python manage.py initialize_election_date_wrapped 2018-11-06`
 5. `python manage.py bootstrap_electionnight_content 2018-11-06`
 6. See the changes in step 4 above.
 7. Feature races for national body pages.
-8. `python manage.py bake_elections 2018-11-06`
+8. Set `ELECTIONNIGHT_AWS_S3_BUCKET` back to production.
+9. `python manage.py bake_elections 2018-11-06`
