@@ -5,12 +5,11 @@ agate-sql==0.5.3
 alabaster==0.7.11
 amqp==2.3.2
 asn1crypto==0.24.0
-awscli==1.16.48
 Babel==2.6.0
 bcrypt==3.1.4
 billiard==3.5.0.4
 boto3==1.9.26
-botocore==1.12.38
+botocore==1.12.26
 CacheControl==0.11.7
 celery==4.2.1
 cement==2.10.2
@@ -58,9 +57,9 @@ packaging==17.1
 paramiko==2.4.1
 parsedatetime==2.4
 Pillow==5.2.0
--e git+https://github.com/The-Politico/politico-civic.git@58e2a94510befb5bc206fcb9e239e657a82ef807#egg=politico_civic
+-e git+https://github.com/The-Politico/politico-civic.git@2edb44454f9e2540e46c23adba261aee6c381493#egg=politico_civic
 politico-civic-almanac==0.1.0
-politico-civic-ap-loader==0.4.6
+politico-civic-ap-loader==0.4.7
 politico-civic-biography==0.1.0
 politico-civic-demography==0.1.2
 politico-civic-election==0.2.1
