@@ -36,7 +36,7 @@ openpyxl = "*"
 csvkit = "*"
 botocore = "==1.12.26"
 python-dateutil = "==2.2"
-politico-civic-ap-loader = "==0.4.7"
+politico-civic-ap-loader = "==0.4.8"
 "boto3" = "==1.9.26"
 python-dotenv = "*"
 
