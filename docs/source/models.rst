@@ -11,6 +11,20 @@ Almanac uses the Democrats' election calendar to discern distinct statewide elec
 .. autoclass:: almanac.models.ElectionEvent
 
 
+aploader
+--------
+
+AP Loader leverages elex, a tool created by NPR and the New York Times, to get election results from the AP Elections API.
+
+:code:`APElectionMeta`
+
+.. autoclass:: aploader.models.APElectionMeta
+
+:code:`ChamberCall`
+
+.. autoclass:: aploader.models.ChamberCall
+
+
 demography
 ----------
 
@@ -79,14 +93,6 @@ electionnight
 -------------
 
 Election Night builds live results pages based on AP data and models the text content needed on those pages.
-
-:code:`APElectionMeta`
-~~~~~~~~~~~~~~~~~~~~~~
-.. autoclass:: electionnight.models.APElectionMeta
-
-:code:`CandidateColorOrder`
-~~~~~~~~~~~~~~~~~~~~~~~~~~~
-.. autoclass:: electionnight.models.CandidateColorOrder
 
 :code:`PageContent`
 ~~~~~~~~~~~~~~~~~~~
