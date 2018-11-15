@@ -1,16 +1,6 @@
 Models
 ======
 
-almanac
--------
-
-Almanac uses the Democrats' election calendar to discern distinct statewide election events that happen on particular election days.
-
-:code:`ElectionEvent`
-~~~~~~~~~~~~~~~~~~~~~
-.. autoclass:: almanac.models.ElectionEvent
-
-
 aploader
 --------
 
@@ -79,6 +69,10 @@ Election models information about races for particular offices. It also models c
 :code:`ElectionDay`
 ~~~~~~~~~~~~~~~~~~~
 .. autoclass:: election.models.ElectionDay
+
+:code:`ElectionEvent`
+~~~~~~~~~~~~~~~~~~~
+.. autoclass:: election.models.ElectionEvent
 
 :code:`ElectionType`
 ~~~~~~~~~~~~~~~~~~~~
