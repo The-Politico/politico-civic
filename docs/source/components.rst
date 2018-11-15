@@ -35,4 +35,7 @@ Run the management command like this:
 
 ``$ python manage.py bootstrap_vote``
 
+.. note::
+    If you use anything depending on ``politico-civic-government``, you will need an API key from the `ProPublica Congress API <https://projects.propublica.org/api-docs/congress-api/>`__. Export it into your environment as ``PROPUBLICA_CONGRESS_API_KEY``.
+
 That's it! Open your Django admin and see your seed data.
