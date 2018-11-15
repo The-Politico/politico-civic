@@ -8,11 +8,10 @@ Welcome to django-politico-civic's documentation!
    :maxdepth: 2
 
    Why this? <why>
+   Using component apps <components>
    Quickstart <quickstart>
    Models <models>
    Servers <servers>
-   Election Nights <election_nights>
-
 
 
 
