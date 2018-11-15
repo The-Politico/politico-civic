@@ -1,6 +1,8 @@
 Quickstart
 ==========
 
+Use these docs if you're trying to install the entire ``politico-civic`` project. If you don't work at POLITICO, you probably don't want this. Instead, install the component apps you want in your own Django project.
+
 1. Install global dependencies for the project:
 
 .. code-block:: shell
