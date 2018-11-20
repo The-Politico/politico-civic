@@ -18,7 +18,6 @@ INSTALLED_APPS = [
     "stump",
     "biography",
     "vote",
-    "almanac",
     "raceratings",
     "aploader",
     "electionnight",
