@@ -140,9 +140,9 @@ def election_start(date, target, test, nobot):
             "servers.start_county_results:{0},{1}".format(date, test_flag),
         ]
     )
-    run(
-        ["fab", target, "servers.start_reup:{0},{1}".format(date, no_bot_flag)]
-    )
+    # run(
+    #     ["fab", target, "servers.start_reup:{0},{1}".format(date, no_bot_flag)]
+    # )
 
 
 @election.command("stop")
@@ -155,7 +155,7 @@ def election_stop(target):
     """
     run(["fab", target, "servers.stop_state_results"])
     run(["fab", target, "servers.stop_county_results"])
-    run(["fab", target, "servers.stop_reup"])
+    # run(["fab", target, "servers.stop_reup"])
 
 
 @election.command("finish")
