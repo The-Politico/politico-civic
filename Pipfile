@@ -39,6 +39,7 @@ politico-civic-ap-loader = "==0.5.4"
 "boto3" = "==1.9.26"
 python-dotenv = "*"
 politico-civic-campaign-tracker = "==0.1.4"
+webpreview = "*"
 
 [dev-packages]
 
