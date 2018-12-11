@@ -27,4 +27,5 @@ urlpatterns = [
     path("race-ratings/", include("raceratings.urls")),
     path("", include("skins.urls")),
     path("", include("social_django.urls", namespace="social")),
+    path("nested_admin/", include("nested_admin.urls")),
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
