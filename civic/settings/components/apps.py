@@ -10,6 +10,7 @@ INSTALLED_APPS = [
     "django.contrib.staticfiles",
     "social_django",
     "rest_framework",
+    "nested_admin",
     "entity",
     "geography",
     "demography",
