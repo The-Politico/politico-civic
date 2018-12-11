@@ -25,6 +25,7 @@ dj-database-url==0.5.0
 Django==2.0.8
 django-cors-headers==2.4.0
 django-environ==0.4.5
+django-nested-admin==3.1.2
 django-split-settings==0.3.0
 django-storages==1.6.6
 django-uuslug==1.1.8
@@ -57,12 +58,12 @@ packaging==17.1
 paramiko==2.4.1
 parsedatetime==2.4
 Pillow==5.2.0
--e git+https://github.com/The-Politico/politico-civic.git@9dbfd1bfed7970368f14f7f10b7f51128808926f#egg=politico_civic
+-e git+https://github.com/The-Politico/politico-civic.git@81ea06c2b1f2b64e3eed86a9a0c65b022bd59d61#egg=politico_civic
 politico-civic-almanac==0.1.0
 politico-civic-ap-loader==0.5.4
 politico-civic-biography==0.2.0
 politico-civic-campaign==0.1.0
-politico-civic-campaign-tracker==0.1.1
+politico-civic-campaign-tracker==0.1.2
 politico-civic-demography==0.1.2
 politico-civic-election==0.3.0
 politico-civic-election-night==0.13.4
@@ -86,6 +87,7 @@ pyparsing==2.2.0
 pyshp==1.2.12
 python-dateutil==2.2
 python-dotenv==0.9.1
+python-monkey-business==1.0.0
 python-slugify==1.2.5
 python-twitter==3.4.2
 python3-openid==3.1.0
