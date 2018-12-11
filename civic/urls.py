@@ -25,6 +25,7 @@ urlpatterns = [
     path("electionnight/", include("electionnight.urls")),
     path("geography/", include("geography.urls")),
     path("race-ratings/", include("raceratings.urls")),
+    path("tracker/", include("tracker.urls")),
     path("", include("skins.urls")),
     path("", include("social_django.urls", namespace="social")),
     path("nested_admin/", include("nested_admin.urls")),
