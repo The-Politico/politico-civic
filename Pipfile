@@ -23,7 +23,7 @@ politico-civic-entity = "*"
 politico-civic-geography = "==0.5.1"
 politico-civic-government = "==0.1.4"
 politico-civic-election = "==0.3.0"
-politico-civic-biography = "*"
+politico-civic-biography = "==0.2.0"
 politico-civic-stump = "*"
 politico-civic-demography = "==0.1.2"
 click = "*"
@@ -38,6 +38,7 @@ python-dateutil = "==2.2"
 politico-civic-ap-loader = "==0.5.4"
 "boto3" = "==1.9.26"
 python-dotenv = "*"
+politico-civic-campaign-tracker = "==0.1.1"
 
 [dev-packages]
 
