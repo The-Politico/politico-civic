@@ -40,7 +40,7 @@ politico-civic-ap-loader = "==0.5.4"
 python-dotenv = "*"
 politico-civic-campaign-tracker = "==0.3.1"
 webpreview = "*"
-politico-civic-campaign = "==0.2.0"
+politico-civic-campaign = "==0.2.1"
 
 [dev-packages]
 
