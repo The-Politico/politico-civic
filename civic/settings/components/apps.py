@@ -17,6 +17,7 @@ INSTALLED_APPS = [
     "government",
     "election",
     "biography",
+    "stump",
     "campaign",
     "tracker",
     "vote",
