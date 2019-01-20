@@ -1,4 +1,4 @@
-![POLITICO](https://rawgithub.com/The-Politico/src/master/images/logo/badge.png)
+![POLITICO](https://politico.com/interactives/cdn/images/badge.svg)
 
 # politico-civic
 
